@@ -1,0 +1,32 @@
+<% if @message.message_type == "email" %>
+<div class="message_header">Send me an email to benhall2121@yahoo.com or fill out the form</div>
+<% else %>
+<div class="message_header">Call me at (480) 414-8157 or send me a text message by filling out the form</div>
+<% end %>
+<%= form_for(@message) do |f| %>
+
+
+  <%= f.hidden_field :message_type %>
+
+  <% if @message.message_type == "email" %>
+  
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name, :class => 'name_textfield' %>
+  </div>
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email, :class => 'other_textfield' %>
+    <%= f.label :number %>
+    <%= f.text_field :number, :class => 'other_textfield' %>
+  </div>
+  
+  <% end %>
+  <div class="field">
+    <%= f.label :message %><br />
+    <%= f.text_area :message, :class => 'message_textarea' %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Send Message', :id => 'new_message_submit_id' %>
+  </div>
+<% end %>

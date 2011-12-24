@@ -1,0 +1,24 @@
+<h1 class="h1_header">Contact me for a quote:</h1>
+
+<div class="contacts">
+  <% @contacts.each do |contact| %>
+    <%= contact.title %><br/>
+    <%= contact.address %><br/>
+    <%= contact.city + ', ' + contact.state + ' ' + contact.zip %><br/>
+    <%= contact.phone + ' :: ' + contact.email %>
+
+    <br/>
+
+    <% if is_admin? %>
+      <%= link_to 'Show', contact %>
+      <%= link_to 'Edit', edit_contact_path(contact) %>
+      <%= link_to 'Destroy', contact, :confirm => 'Are you sure?', :method => :delete %>
+    <% end %>
+  <% end %>
+</div>
+
+<br />
+
+<% if is_admin? %>
+  <%= link_to 'New Contact', new_contact_path %>
+<% end %>

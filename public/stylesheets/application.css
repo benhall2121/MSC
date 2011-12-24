@@ -1,0 +1,224 @@
+
+
+html{
+  background: #E1E1E1; 
+}
+
+a { 
+  color: #000; 
+  text-decoration: none;
+}
+
+a:hover{ 
+  color: gray; 
+}
+
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+.flash_notice{
+ text-align:center;
+}
+
+#all_wrapper{
+  width:950px;
+  margin: 0 auto;
+}
+
+.footer{
+  font-size:14px;
+  color:#666;
+  text-align:center;
+  margin-bottom:10px;
+}
+
+/*****  Header *****/
+
+.header{
+  overflow:hidden;
+  font-family: arial,sans-serif;
+}
+
+.header a{
+  color:white;	
+}
+
+.header_row_1{
+  vertical-align:bottom;
+}
+
+.header_row_2{
+  vertical-align:bottom;
+}
+
+.header_row_3{
+  vertical-align:bottom;
+}
+
+.header_row_1_div{
+  display:inline-block;	
+}
+
+.header_row_3_div{
+  display:inline-block;	
+}
+
+.text_about_me{
+  font-size:75px;
+  line-height:60px;
+}
+
+.text_about_me a:hover{
+  color:#97D457;	
+}
+
+.text_contact{
+  font-size:27px;
+  line-height:22px;
+}
+
+.text_contact a:hover{
+  color:#3B9F53;	
+}
+
+.text_order{
+  font-size:36px;
+  line-height:33px;
+}
+
+.text_order a:hover{
+  color:#306AC0;	
+}
+
+.text_weddings{
+  font-size:165px;
+  line-height:140px;
+}
+
+.text_weddings a:hover{
+  color:#F38EB7;	
+}
+
+.text_special{
+  font-size:63px;
+}
+
+.text_occassions{
+  font-size:45px;
+  line-height:43px;
+}
+
+.text_special_occassions:hover{
+  color:#55BEF3;	
+}
+
+.text_parties{
+  font-size:145px;
+  line-height:110px;
+}
+
+.text_parties a:hover{
+  color:#A391CA;	
+}
+
+/*****  End Header *****/
+
+
+
+
+
+/*****  Projects *****/
+
+.cakes_wrapper{		
+  position:relative;
+  width:950px;
+}
+
+.single_cake_wrapper{
+  border: 1px dashed green;
+  text-align:center;
+  
+  width: 270px; 
+  padding: 10px; 
+  margin: 10px 5px;
+  font-size: 11px; 
+  
+}
+
+/*****  End Projects *****/
+
+
+
+
+/*****  Messages  *****/
+
+#new_message_div{
+  text-align:center;
+  font-size:12px;
+  font-family: Tahoma, sans-serif;
+  color: #ccc
+}
+
+.message_header{
+ font-size:15px;	
+ margin:10px 0 10px 0;
+}
+
+.other_textfield{
+ border: 3px solid #cccccc;
+ width: 200px;	
+}
+
+.name_textfield{
+ border: 3px solid #cccccc;
+ width: 430px;	
+}
+
+#new_message_div  textarea{
+        width: 500px;
+        height: 120px;
+        border: 3px solid #cccccc;
+        padding: 5px;
+}
+
+.message_textarea{
+ resize:none;	
+}
+
+/*****  End Messages  *****/
+
+
+

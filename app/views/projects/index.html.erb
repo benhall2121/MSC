@@ -1,0 +1,21 @@
+<div id="wrapper" class="BoardLayout">
+
+<div class="cakes_wrapper">
+  <% @projects.each do |project| %>
+    <div class="single_cake_wrapper">
+      <div class="cake_image_div"><%= image_tag(project.photo.url(:medium)) %></div>
+      <div class="cake_description_div"><span class="cake_title"><%= project.title %></span> <%= project.description %></div>
+   
+    <% if is_admin? %>
+      <%= link_to 'Show', project %>
+      <%= link_to 'Edit', edit_project_path(project) %>
+      <%= link_to 'Destroy', project, :confirm => 'Are you sure?', :method => :delete %>
+    <% end %>
+     </div> 
+  <% end %>
+</div>
+
+</div>
+
+
+

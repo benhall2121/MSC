@@ -1,0 +1,17 @@
+<% @abouts.each do |about| %>
+    
+    <div id="who_is_benerino"><%= simple_format(about.body) %></div>
+    
+    <% if is_admin? %>  
+      <%= link_to 'Show', about %>
+      <%= link_to 'Edit', edit_about_path(about) %>
+      <%= link_to 'Destroy', about, :confirm => 'Are you sure?', :method => :delete %>
+    <% end %>
+<% end %>
+
+
+<br />
+
+<% if is_admin? %>
+  <%= link_to 'New About', new_about_path %>
+<% end %>
