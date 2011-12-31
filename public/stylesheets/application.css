@@ -4,6 +4,12 @@ html{
   background: #E1E1E1; 
 }
 
+body{
+margin:0;
+padding:20px;
+border:10px solid white;
+}
+
 a { 
   color: #000; 
   text-decoration: none;
@@ -67,9 +73,14 @@ a:hover{
 
 /*****  Header *****/
 
+.logo:hover{
+  cursor:pointer;	
+}
+
 .header{
   overflow:hidden;
   font-family: arial,sans-serif;
+  color: #fff;
 }
 
 .header a{
@@ -102,7 +113,12 @@ a:hover{
 }
 
 .text_about_me a:hover{
-  color:#97D457;	
+  color:#97D457;
+  cursor:pointer;	
+}
+
+.green, a.green{
+  color:#97D457;
 }
 
 .text_contact{
@@ -110,8 +126,9 @@ a:hover{
   line-height:22px;
 }
 
-.text_contact a:hover{
-  color:#3B9F53;	
+.text_contact:hover{
+  color:#3B9F53;
+  cursor:pointer;	
 }
 
 .text_order{
@@ -119,8 +136,13 @@ a:hover{
   line-height:33px;
 }
 
-.text_order a:hover{
-  color:#306AC0;	
+.text_order:hover{
+  color:#306AC0;
+  cursor:pointer;	
+}
+
+.pink{
+  color:#F38EB7;	
 }
 
 .text_weddings{
@@ -128,12 +150,17 @@ a:hover{
   line-height:140px;
 }
 
-.text_weddings a:hover{
-  color:#F38EB7;	
+.text_weddings:hover, .text_weddings a:hover{
+  color:#F38EB7;
+  cursor:pointer;	
 }
 
 .text_special{
   font-size:63px;
+}
+
+.teal{
+  color:#55BEF3;
 }
 
 .text_occassions{
@@ -141,8 +168,13 @@ a:hover{
   line-height:43px;
 }
 
-.text_special_occassions:hover{
-  color:#55BEF3;	
+.text_special_occassions:hover, .text_special_occassions a:hover{
+  color:#55BEF3;
+  cursor:pointer;
+}
+
+.purple{
+  color:#A391CA;
 }
 
 .text_parties{
@@ -150,8 +182,9 @@ a:hover{
   line-height:110px;
 }
 
-.text_parties a:hover{
+.text_parties:hover, .text_parties a:hover{
   color:#A391CA;	
+  cursor:pointer;
 }
 
 /*****  End Header *****/
@@ -167,13 +200,18 @@ a:hover{
   width:950px;
 }
 
+.cake_title{
+  font-weight:bold;
+  font-size: 12px; 	
+}
+
 .single_cake_wrapper{
-  border: 1px dashed green;
+  border: 1px dashed #fff;
   text-align:center;
   
   width: 270px; 
   padding: 10px; 
-  margin: 10px 5px;
+  margin: 5px 5px;
   font-size: 11px; 
   
 }

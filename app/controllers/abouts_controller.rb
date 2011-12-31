@@ -3,8 +3,7 @@ class AboutsController < ApplicationController
   # GET /abouts
   # GET /abouts.xml
   def index
-    @abouts = About.all
-    @projects = Project.find(:all, :order => "created_at DESC")
+    @abouts = About.find(:first, :order => "created_at DESC")
 
     respond_to do |format|
       format.html # index.html.erb
@@ -46,7 +45,7 @@ class AboutsController < ApplicationController
 
     respond_to do |format|
       if @about.save
-        format.html { redirect_to(@about, :notice => 'About was successfully created.') }
+        format.html { redirect_to(abouts_path(), :notice => 'About was successfully created.') }
         format.xml  { render :xml => @about, :status => :created, :location => @about }
       else
         format.html { render :action => "new" }

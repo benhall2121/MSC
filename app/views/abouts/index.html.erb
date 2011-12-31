@@ -1,17 +1,21 @@
-<% @abouts.each do |about| %>
+<script type="text/javascript">
+
+$(document).ready(function() {
+  $('a#about_me_nav').addClass('green');
+});
+
+</script>
     
-    <div id="who_is_benerino"><%= simple_format(about.body) %></div>
+    <div>
+      <br />
+      <h1><%= @abouts.title %></h1>       
+    </div>
+    <div><%= simple_format(@abouts.body) %></div>
     
     <% if is_admin? %>  
-      <%= link_to 'Show', about %>
-      <%= link_to 'Edit', edit_about_path(about) %>
-      <%= link_to 'Destroy', about, :confirm => 'Are you sure?', :method => :delete %>
+      <br/>
+      <%= link_to 'Edit', edit_about_path(@abouts) %>
+      <%= link_to 'Delete', @abouts, :confirm => 'Are you sure?', :method => :delete %>
     <% end %>
-<% end %>
 
 
-<br />
-
-<% if is_admin? %>
-  <%= link_to 'New About', new_about_path %>
-<% end %>

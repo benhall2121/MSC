@@ -20,8 +20,10 @@
       <%= f.text_field :title %>
     </p>
     <p>
-      <%= f.label :links %><br />
-      <%= f.text_field :links %>
+      <%= f.label 'Categories' %><br />
+      <%= f.check_box :wedding %> Weddings 
+      <%= f.check_box :special %> Special Occasions
+      <%= f.check_box :parties %> Parties
     </p>
     <p>
       <%= f.label :description %><br />
