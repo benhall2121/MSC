@@ -1,6 +1,8 @@
 // Place your application-specific JavaScript functions and classes here
 // This file is automatically included by javascript_include_tag :defaults
-
+jQuery.ajaxSetup({ 
+  'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
+})
 	
 var container_width, column_width, num_columns, column_array_heights = [], shortest = null, shortestIndex = 0, which = '';
 
@@ -142,6 +144,15 @@ $(document).ready(function() {
   $('.logo').click(function(){
     reset_view();
     refresh_view();
+  });
+  
+  $('.delete').click(function(){
+    asd = confirm("Are you Sure?");
+    if(asd){
+      return true;
+    }
+    
+    return false;
   });
   
 });

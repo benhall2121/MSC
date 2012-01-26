@@ -19,6 +19,9 @@ a:hover{
   color: gray; 
 }
 
+.delete{
+	background-color: transparent; border: 0; padding: 0;
+}
 
 #notice {
   color: green;
@@ -64,11 +67,15 @@ a:hover{
   margin: 0 auto;
 }
 
-.footer{
+.footer, .footer a{
   font-size:14px;
   color:#666;
   text-align:center;
   margin-bottom:10px;
+}
+
+.footer a:hover{
+  color:black;	
 }
 
 /*****  Header *****/
