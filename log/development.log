@@ -8571,3 +8571,401 @@ Started GET "/" for 127.0.0.1 at Thu Jan 26 13:25:56 -0700 2012
   [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
 Rendered projects/index.html.erb within layouts/application (130.0ms)
 Completed 200 OK in 144ms (Views: 135.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Jan 26 22:41:00 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.7ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC[0m
+Rendered projects/index.html.erb within layouts/application (93.3ms)
+Completed 200 OK in 298ms (Views: 199.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/project/2/medium/wedding.jpg?1323672496" for 127.0.0.1 at Thu Jan 26 22:41:03 -0700 2012
+
+ActionController::RoutingError (No route matches "/assets/project/2/medium/wedding.jpg"):
+  
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/assets/project/1/medium/rubiks.jpg?1323672534" for 127.0.0.1 at Thu Jan 26 22:41:03 -0700 2012
+
+ActionController::RoutingError (No route matches "/assets/project/1/medium/rubiks.jpg"):
+  
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at Thu Jan 26 22:41:26 -0700 2012
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 24ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Thu Jan 26 22:41:32 -0700 2012
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Log in", "username"=>"benhall2121", "authenticity_token"=>"3GgR7HacaP90d+kp1rV40Q5k5YOV12cq5Qh+aeT1hBY=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+  [1m[35mSQL (107.7ms)[0m  SHOW TABLES
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'benhall2121' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 312ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Jan 26 22:41:32 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (131.3ms)
+Completed 200 OK in 232ms (Views: 136.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/project/1/medium/rubiks.jpg?1323672534" for 127.0.0.1 at Thu Jan 26 22:41:33 -0700 2012
+
+ActionController::RoutingError (No route matches "/assets/project/1/medium/rubiks.jpg"):
+  
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/assets/project/2/medium/wedding.jpg?1323672496" for 127.0.0.1 at Thu Jan 26 22:41:33 -0700 2012
+
+ActionController::RoutingError (No route matches "/assets/project/2/medium/wedding.jpg"):
+  
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started POST "/projects/2" for 127.0.0.1 at Thu Jan 26 22:41:39 -0700 2012
+  Processing by ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3GgR7HacaP90d+kp1rV40Q5k5YOV12cq5Qh+aeT1hBY=", "id"=>"2"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 2 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+[paperclip] Scheduling attachments for deletion.
+  [1m[36mAREL (0.6ms)[0m  [1mDELETE FROM `projects` WHERE `projects`.`id` = 2[0m
+[paperclip] Deleting attachments.
+  [1m[35mSQL (23.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/projects
+Completed 302 Found in 242ms
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Jan 26 22:41:39 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/index.html.erb within layouts/application (114.5ms)
+Completed 200 OK in 128ms (Views: 120.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/project/1/medium/rubiks.jpg?1323672534" for 127.0.0.1 at Thu Jan 26 22:41:40 -0700 2012
+
+ActionController::RoutingError (No route matches "/assets/project/1/medium/rubiks.jpg"):
+  
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started POST "/projects/1" for 127.0.0.1 at Thu Jan 26 22:41:43 -0700 2012
+  Processing by ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3GgR7HacaP90d+kp1rV40Q5k5YOV12cq5Qh+aeT1hBY=", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProject Load (0.3ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+[paperclip] Scheduling attachments for deletion.
+  [1m[35mAREL (1.0ms)[0m  DELETE FROM `projects` WHERE `projects`.`id` = 1
+[paperclip] Deleting attachments.
+  [1m[36mSQL (30.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed 302 Found in 185ms
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Jan 26 22:41:43 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.8ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (91.1ms)
+Completed 200 OK in 109ms (Views: 97.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at Thu Jan 26 22:41:45 -0700 2012
+  Processing by UsersController#admin as HTML
+  [1m[35mAbout Load (0.5ms)[0m  SELECT `abouts`.* FROM `abouts` ORDER BY created_at DESC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered users/admin.html.erb within layouts/application (151.5ms)
+Completed 200 OK in 161ms (Views: 159.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Thu Jan 26 22:41:46 -0700 2012
+  Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_form.html.erb (151.9ms)
+Rendered projects/new.html.erb within layouts/application (238.8ms)
+Completed 200 OK in 307ms (Views: 277.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/projects" for 127.0.0.1 at Thu Jan 26 22:42:06 -0700 2012
+  Processing by ProjectsController#create as HTML
+  Parameters: {"commit"=>"Create Project", "authenticity_token"=>"3GgR7HacaP90d+kp1rV40Q5k5YOV12cq5Qh+aeT1hBY=", "utf8"=>"✓", "project"=>{"photo"=>#<ActionDispatch::Http::UploadedFile:0x103776628 @content_type="image/jpeg", @tempfile=#<File:/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/RackMultipart20120126-91247-9zozhz-0>, @original_filename="IMG_4260.JPG", @headers="Content-Disposition: form-data; name=\"project[photo]\"; filename=\"IMG_4260.JPG\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"Purple Cake", "parties"=>"0", "special"=>"1", "description"=>"Purple", "wedding"=>"0"}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120126-91247-c50tep-0.JPG[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120126-91247-c50tep-0.JPG[0]' -resize "150>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120126-91247-c50tep-020120126-91247-9mgysu-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120126-91247-c50tep-0.JPG[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120126-91247-c50tep-0.JPG[0]' -resize "250>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120126-91247-c50tep-020120126-91247-12lp4l5-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120126-91247-c50tep-0.JPG[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120126-91247-c50tep-0.JPG[0]' -resize "540>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120126-91247-c50tep-020120126-91247-6d8nt1-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120126-91247-c50tep-0.JPG[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120126-91247-c50tep-0.JPG[0]' -resize "95>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120126-91247-c50tep-020120126-91247-sf27cj-0'
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (3.0ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mAREL (42.0ms)[0m  INSERT INTO `projects` (`updated_at`, `links`, `special`, `created_at`, `title`, `parties`, `photo_file_name`, `description`, `photo_file_size`, `wedding`, `photo_updated_at`, `photo_content_type`) VALUES ('2012-01-27 05:42:12', NULL, 1, '2012-01-27 05:42:12', 'Purple Cake', 0, 'IMG_4260.JPG', 'Purple', 1661454, 0, '2012-01-27 05:42:06', 'image/jpeg')
+[paperclip] Saving attachments.
+[paperclip] saving /Users/Ben/Desktop/Work/SideWork/MSC/public/assets/project/8/small/IMG_4260.JPG
+[paperclip] saving /Users/Ben/Desktop/Work/SideWork/MSC/public/assets/project/8/medium/IMG_4260.JPG
+[paperclip] saving /Users/Ben/Desktop/Work/SideWork/MSC/public/assets/project/8/large/IMG_4260.JPG
+[paperclip] saving /Users/Ben/Desktop/Work/SideWork/MSC/public/assets/project/8/icon/IMG_4260.JPG
+[paperclip] saving /Users/Ben/Desktop/Work/SideWork/MSC/public/assets/project/8/original/IMG_4260.JPG
+  [1m[36mSQL (0.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6289ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Jan 26 22:42:13 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (131.8ms)
+Completed 200 OK in 153ms (Views: 137.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/8/edit" for 127.0.0.1 at Thu Jan 26 22:42:38 -0700 2012
+  Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 8 LIMIT 1[0m
+ERROR: compiling _app_views_projects__form_html_erb__1033345494_2176971800_904030 RAISED compile error
+/Users/Ben/Desktop/Work/SideWork/MSC/app/views/projects/_form.html.erb:32: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+...r.append= ( f.submit, 'Save' );@output_buffer.safe_concat('
+                              ^
+/Users/Ben/Desktop/Work/SideWork/MSC/app/views/projects/_form.html.erb:34: syntax error, unexpected kEND, expecting ')'
+'); end 
+       ^
+/Users/Ben/Desktop/Work/SideWork/MSC/app/views/projects/_form.html.erb:36: syntax error, unexpected kENSURE, expecting ')'
+/Users/Ben/Desktop/Work/SideWork/MSC/app/views/projects/_form.html.erb:38: syntax error, unexpected kEND, expecting ')'
+Function body:           def _app_views_projects__form_html_erb__1033345494_2176971800_904030(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "projects/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.append=  form_for(@project, :html => { :multipart => true }) do |f| @output_buffer.safe_concat('
+');   if @project.errors.any? 
+@output_buffer.safe_concat('    <div id="error_explanation">
+      <h2>');@output_buffer.append= ( pluralize(@project.errors.count, "error") );@output_buffer.safe_concat(' prohibited this project from being saved:</h2>
+
+      <ul>
+');@output_buffer.append_if_string=        @project.errors.full_messages.each do |msg| 
+@output_buffer.safe_concat('        <li>');@output_buffer.append= ( msg );@output_buffer.safe_concat('</li>
+');       end 
+@output_buffer.safe_concat('      </ul>
+    </div>
+');   end 
+@output_buffer.safe_concat('
+  <div class="actions">
+    <p>
+      ');@output_buffer.append= ( f.file_field :photo );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </p>
+    <p>
+      ');@output_buffer.append= ( f.label :title );@output_buffer.safe_concat('<br />
+      ');@output_buffer.append= ( f.text_field :title );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </p>
+    <p>
+      ');@output_buffer.append= ( f.label 'Categories' );@output_buffer.safe_concat('<br />
+      ');@output_buffer.append= ( f.check_box :wedding );@output_buffer.safe_concat(' Weddings 
+      ');@output_buffer.append= ( f.check_box :special );@output_buffer.safe_concat(' Special Occasions
+      ');@output_buffer.append= ( f.check_box :parties );@output_buffer.safe_concat(' Parties
+    </p>
+    <p>
+      ');@output_buffer.append= ( f.label :description );@output_buffer.safe_concat('<br />
+      ');@output_buffer.append= ( f.text_area :description );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </p>
+    ');@output_buffer.append= ( f.submit, 'Save' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+'); end 
+@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/Ben/Desktop/Work/SideWork/MSC/app/views/projects/_form.html.erb:38:in `compile'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_view/template.rb:134:in `render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/notifications.rb:54:in `instrument'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_view/template.rb:127:in `render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_view/render/partials.rb:333:in `render_partial'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_view/render/partials.rb:262:in `render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_view/render/partials.rb:260:in `render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_view/render/partials.rb:378:in `_render_partial'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:31:in `render'
+/Users/Ben/Desktop/Work/SideWork/MSC/app/views/projects/edit.html.erb:3:in `_app_views_projects_edit_html_erb__1526827524_2176988360_0'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_view/template.rb:135:in `send'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_view/template.rb:135:in `render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/notifications.rb:54:in `instrument'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_view/template.rb:127:in `render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:59:in `_render_template'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:26:in `render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:93:in `render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/Ben/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activerecord-3.0.7/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:14:in `default_render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:6:in `send_action'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:150:in `process_action'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:441:in `_run__46567664__process_action__1992409046__callbacks'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:410:in `send'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:94:in `send'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:119:in `process'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:41:in `process'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal.rb:178:in `action'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:82:in `optimized_each'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/methodoverride.rb:24:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:32:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:12:in `cache'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:31:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/sendfile.rb:106:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/railties-3.0.7/lib/rails/rack/logger.rb:13:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/runtime.rb:17:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/lock.rb:11:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/lock.rb:11:in `synchronize'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/lock.rb:11:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/railties-3.0.7/lib/rails/application.rb:168:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/railties-3.0.7/lib/rails/application.rb:77:in `send'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/railties-3.0.7/lib/rails/application.rb:77:in `method_missing'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/railties-3.0.7/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/content_length.rb:13:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/chunked.rb:15:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/handler/mongrel.rb:67:in `process'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/handler/mongrel.rb:38:in `run'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/server.rb:217:in `start'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/railties-3.0.7/lib/rails/commands/server.rb:65:in `start'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/railties-3.0.7/lib/rails/commands.rb:30
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/railties-3.0.7/lib/rails/commands.rb:27:in `tap'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/railties-3.0.7/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered projects/_form.html.erb (42.6ms)
+Rendered projects/edit.html.erb within layouts/application (44.6ms)
+Completed   in 204ms
+
+ActionView::Template::Error (compile error
+/Users/Ben/Desktop/Work/SideWork/MSC/app/views/projects/_form.html.erb:32: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+...r.append= ( f.submit, 'Save' );@output_buffer.safe_concat('
+                              ^
+/Users/Ben/Desktop/Work/SideWork/MSC/app/views/projects/_form.html.erb:34: syntax error, unexpected kEND, expecting ')'
+'); end 
+       ^
+/Users/Ben/Desktop/Work/SideWork/MSC/app/views/projects/_form.html.erb:36: syntax error, unexpected kENSURE, expecting ')'
+/Users/Ben/Desktop/Work/SideWork/MSC/app/views/projects/_form.html.erb:38: syntax error, unexpected kEND, expecting ')'):
+    29:       <%= f.label :description %><br />
+    30:       <%= f.text_area :description %>
+    31:     </p>
+    32:     <%= f.submit, 'Save' %>
+    33:   </div>
+    34: <% end %>
+  app/views/projects/_form.html.erb:38:in `compile'
+  app/views/projects/edit.html.erb:3:in `_app_views_projects_edit_html_erb__1526827524_2176988360_0'
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (26.2ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (53.8ms)
+
+
+Started GET "/projects/8/edit" for 127.0.0.1 at Thu Jan 26 22:42:47 -0700 2012
+  Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 8 LIMIT 1[0m
+Rendered projects/_form.html.erb (84.6ms)
+Rendered projects/edit.html.erb within layouts/application (91.5ms)
+Completed 200 OK in 128ms (Views: 97.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at Thu Jan 26 22:43:40 -0700 2012
+  Processing by UsersController#admin as HTML
+  [1m[35mAbout Load (0.4ms)[0m  SELECT `abouts`.* FROM `abouts` ORDER BY created_at DESC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered users/admin.html.erb within layouts/application (139.6ms)
+Completed 200 OK in 146ms (Views: 144.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Thu Jan 26 22:43:43 -0700 2012
+  Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_form.html.erb (152.7ms)
+Rendered projects/new.html.erb within layouts/application (159.4ms)
+Completed 200 OK in 195ms (Views: 164.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/?which=wedding" for 127.0.0.1 at Thu Jan 26 22:44:28 -0700 2012
+  Processing by ProjectsController#index as HTML
+  Parameters: {"which"=>"wedding"}
+  [1m[36mProject Load (0.8ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/index.html.erb within layouts/application (113.0ms)
+Completed 200 OK in 127ms (Views: 118.7ms | ActiveRecord: 1.0ms)
