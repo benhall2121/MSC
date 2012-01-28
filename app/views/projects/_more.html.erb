@@ -1,0 +1,15 @@
+  <% @projects.each do |project| %>
+    <div class="single_cake_wrapper">
+      <div class="cake_image_div"><%= link_to image_tag(project.photo.url(:medium), :class => 'single_photo'), project.photo.url(:large), :class => 'pop', :rel => 'gallery', :title => project.title %></div>
+      <div class="cake_description_div"><span class="cake_title"><%= project.title %></span> <br/><%= project.description %></div>
+      <%= hidden_field project.wedding, 'wedding', :class => 'wedding' if project.wedding %>
+      <%= hidden_field project.special, 'special', :class => 'special' if project.special %>
+      <%= hidden_field project.parties, 'parties', :class => 'parties' if project.parties %>
+   
+    <% if is_admin? %>
+      <%= link_to 'Edit', edit_project_path(project) %>
+      <%= link_to 'Delete', project, :method => :delete, :confirm => 'Are you sure?' %>
+    <% end %>
+     </div> 
+  <% end %>
+

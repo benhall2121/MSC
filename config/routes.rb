@@ -13,6 +13,8 @@ MSC::Application.routes.draw do
   get "login" => "sessions#new", :as => "login"
   get "signup" => "users#new", :as => "signup"
   get "admin" => "users#admin", :as => "admin"
+  
+  get "get_more" => "projects#get_more", :as => "get_more"
 	
   resources :users
   resources :sessions

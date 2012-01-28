@@ -8969,3 +8969,2660 @@ Started GET "/?which=wedding" for 127.0.0.1 at Thu Jan 26 22:44:28 -0700 2012
   [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
 Rendered projects/index.html.erb within layouts/application (113.0ms)
 Completed 200 OK in 127ms (Views: 118.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:39:21 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (45.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC[0m
+Rendered projects/index.html.erb within layouts/application (112.9ms)
+Completed 200 OK in 374ms (Views: 186.2ms | ActiveRecord: 45.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at Sat Jan 28 00:39:31 -0700 2012
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 27ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Sat Jan 28 00:39:40 -0700 2012
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Log in", "username"=>"benhall2121", "authenticity_token"=>"so33ofAtlTgmjk5La6kF/3g08zPJrb6FpQ0MFtaSMdo=", "utf8"=>"✓", "password"=>"[FILTERED]"}
+  [1m[35mSQL (28.7ms)[0m  SHOW TABLES
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`username` = 'benhall2121' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 312ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:39:40 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (114.4ms)
+Completed 200 OK in 218ms (Views: 119.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at Sat Jan 28 00:41:05 -0700 2012
+  Processing by UsersController#admin as HTML
+  [1m[35mAbout Load (36.6ms)[0m  SELECT `abouts`.* FROM `abouts` ORDER BY created_at DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered users/admin.html.erb within layouts/application (168.6ms)
+Completed 200 OK in 175ms (Views: 137.2ms | ActiveRecord: 36.8ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Sat Jan 28 00:41:07 -0700 2012
+  Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_form.html.erb (176.8ms)
+Rendered projects/new.html.erb within layouts/application (209.0ms)
+Completed 200 OK in 292ms (Views: 237.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/projects" for 127.0.0.1 at Sat Jan 28 00:41:36 -0700 2012
+  Processing by ProjectsController#create as HTML
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"so33ofAtlTgmjk5La6kF/3g08zPJrb6FpQ0MFtaSMdo=", "utf8"=>"✓", "project"=>{"photo"=>#<ActionDispatch::Http::UploadedFile:0x103a84400 @content_type="image/jpeg", @tempfile=#<File:/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/RackMultipart20120128-550-86a0c6-0>, @original_filename="cake2.jpg", @headers="Content-Disposition: form-data; name=\"project[photo]\"; filename=\"cake2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"cake 2", "parties"=>"0", "special"=>"0", "description"=>"cake 2\r\n", "wedding"=>"1"}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-5noaki-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-5noaki-0.jpg[0]' -resize "150>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-5noaki-020120128-550-zht2gr-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-5noaki-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-5noaki-0.jpg[0]' -resize "250>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-5noaki-020120128-550-guh9pi-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-5noaki-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-5noaki-0.jpg[0]' -resize "540>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-5noaki-020120128-550-9m3hmv-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-5noaki-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-5noaki-0.jpg[0]' -resize "95>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-5noaki-020120128-550-rwxcbk-0'
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (4.3ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO `projects` (`photo_file_name`, `title`, `created_at`, `photo_file_size`, `parties`, `wedding`, `photo_updated_at`, `links`, `description`, `photo_content_type`, `special`, `updated_at`) VALUES ('cake2.jpg', 'cake 2', '2012-01-28 07:41:37', 62248, 0, 1, '2012-01-28 07:41:36', NULL, 'cake 2\r\n', 'image/jpeg', 0, '2012-01-28 07:41:37')
+[paperclip] Saving attachments.
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/9/small/cake2.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/9/medium/cake2.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/9/large/cake2.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/9/icon/cake2.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/9/original/cake2.jpg
+  [1m[36mSQL (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 1830ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:41:38 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (111.9ms)
+Completed 200 OK in 214ms (Views: 116.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at Sat Jan 28 00:41:41 -0700 2012
+  Processing by UsersController#admin as HTML
+  [1m[35mAbout Load (0.4ms)[0m  SELECT `abouts`.* FROM `abouts` ORDER BY created_at DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered users/admin.html.erb within layouts/application (130.9ms)
+Completed 200 OK in 137ms (Views: 135.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Sat Jan 28 00:41:43 -0700 2012
+  Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_form.html.erb (90.5ms)
+Rendered projects/new.html.erb within layouts/application (97.9ms)
+Completed 200 OK in 134ms (Views: 103.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/projects" for 127.0.0.1 at Sat Jan 28 00:42:00 -0700 2012
+  Processing by ProjectsController#create as HTML
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"so33ofAtlTgmjk5La6kF/3g08zPJrb6FpQ0MFtaSMdo=", "utf8"=>"✓", "project"=>{"photo"=>#<ActionDispatch::Http::UploadedFile:0x1033ec3b8 @content_type="image/jpeg", @tempfile=#<File:/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/RackMultipart20120128-550-1fdtu3v-0>, @original_filename="cake3.jpg", @headers="Content-Disposition: form-data; name=\"project[photo]\"; filename=\"cake3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"cake 3", "parties"=>"0", "special"=>"1", "description"=>"cake 3", "wedding"=>"0"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-zorrrw-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-zorrrw-0.jpg[0]' -resize "150>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-zorrrw-020120128-550-1hmg106-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-zorrrw-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-zorrrw-0.jpg[0]' -resize "250>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-zorrrw-020120128-550-1jpnt9-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-zorrrw-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-zorrrw-0.jpg[0]' -resize "540>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-zorrrw-020120128-550-tvhztd-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-zorrrw-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-zorrrw-0.jpg[0]' -resize "95>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-zorrrw-020120128-550-xk5w02-0'
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.9ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `projects` (`description`, `parties`, `photo_file_name`, `special`, `photo_content_type`, `photo_file_size`, `updated_at`, `created_at`, `wedding`, `title`, `links`, `photo_updated_at`) VALUES ('cake 3', 0, 'cake3.jpg', 1, 'image/jpeg', 58290, '2012-01-28 07:42:01', '2012-01-28 07:42:01', 0, 'cake 3', NULL, '2012-01-28 07:42:00')
+[paperclip] Saving attachments.
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/10/small/cake3.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/10/medium/cake3.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/10/large/cake3.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/10/icon/cake3.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/10/original/cake3.jpg
+  [1m[36mSQL (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 325ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:42:01 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (221.5ms)
+Completed 200 OK in 238ms (Views: 228.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at Sat Jan 28 00:42:04 -0700 2012
+  Processing by UsersController#admin as HTML
+  [1m[35mAbout Load (0.4ms)[0m  SELECT `abouts`.* FROM `abouts` ORDER BY created_at DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered users/admin.html.erb within layouts/application (111.7ms)
+Completed 200 OK in 118ms (Views: 116.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Sat Jan 28 00:42:05 -0700 2012
+  Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_form.html.erb (97.2ms)
+Rendered projects/new.html.erb within layouts/application (103.6ms)
+Completed 200 OK in 139ms (Views: 108.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/projects" for 127.0.0.1 at Sat Jan 28 00:42:25 -0700 2012
+  Processing by ProjectsController#create as HTML
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"so33ofAtlTgmjk5La6kF/3g08zPJrb6FpQ0MFtaSMdo=", "utf8"=>"✓", "project"=>{"photo"=>#<ActionDispatch::Http::UploadedFile:0x10391e4d0 @content_type="image/jpeg", @tempfile=#<File:/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/RackMultipart20120128-550-zrc4qx-0>, @original_filename="IMG_4260.JPG", @headers="Content-Disposition: form-data; name=\"project[photo]\"; filename=\"IMG_4260.JPG\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"cake 4", "parties"=>"1", "special"=>"0", "description"=>"cake 4", "wedding"=>"0"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1a5id0g-0.JPG[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1a5id0g-0.JPG[0]' -resize "150>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1a5id0g-020120128-550-rsyiye-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1a5id0g-0.JPG[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1a5id0g-0.JPG[0]' -resize "250>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1a5id0g-020120128-550-2q1nwq-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1a5id0g-0.JPG[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1a5id0g-0.JPG[0]' -resize "540>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1a5id0g-020120128-550-1gp06iv-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1a5id0g-0.JPG[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1a5id0g-0.JPG[0]' -resize "95>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1a5id0g-020120128-550-zyo2e3-0'
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (3.2ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `projects` (`title`, `description`, `photo_updated_at`, `parties`, `photo_content_type`, `photo_file_name`, `updated_at`, `photo_file_size`, `wedding`, `special`, `links`, `created_at`) VALUES ('cake 4', 'cake 4', '2012-01-28 07:42:26', 1, 'image/jpeg', 'IMG_4260.JPG', '2012-01-28 07:42:30', 1661454, 0, 0, NULL, '2012-01-28 07:42:30')
+[paperclip] Saving attachments.
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/11/small/IMG_4260.JPG
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/11/medium/IMG_4260.JPG
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/11/large/IMG_4260.JPG
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/11/icon/IMG_4260.JPG
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/11/original/IMG_4260.JPG
+  [1m[36mSQL (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4577ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:42:30 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (148.7ms)
+Completed 200 OK in 162ms (Views: 154.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at Sat Jan 28 00:42:40 -0700 2012
+  Processing by UsersController#admin as HTML
+  [1m[35mAbout Load (0.4ms)[0m  SELECT `abouts`.* FROM `abouts` ORDER BY created_at DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered users/admin.html.erb within layouts/application (131.5ms)
+Completed 200 OK in 137ms (Views: 136.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Sat Jan 28 00:42:42 -0700 2012
+  Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_form.html.erb (145.6ms)
+Rendered projects/new.html.erb within layouts/application (152.4ms)
+Completed 200 OK in 233ms (Views: 157.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/projects" for 127.0.0.1 at Sat Jan 28 00:42:57 -0700 2012
+  Processing by ProjectsController#create as HTML
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"so33ofAtlTgmjk5La6kF/3g08zPJrb6FpQ0MFtaSMdo=", "utf8"=>"✓", "project"=>{"photo"=>#<ActionDispatch::Http::UploadedFile:0x1036d2d48 @content_type="image/jpeg", @tempfile=#<File:/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/RackMultipart20120128-550-157gprb-0>, @original_filename="IMG_4260.JPG", @headers="Content-Disposition: form-data; name=\"project[photo]\"; filename=\"IMG_4260.JPG\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"cake 5", "parties"=>"0", "special"=>"0", "description"=>"cake 5", "wedding"=>"1"}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1ahu4b5-0.JPG[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1ahu4b5-0.JPG[0]' -resize "150>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1ahu4b5-020120128-550-5j08uu-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1ahu4b5-0.JPG[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1ahu4b5-0.JPG[0]' -resize "250>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1ahu4b5-020120128-550-1792e88-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1ahu4b5-0.JPG[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1ahu4b5-0.JPG[0]' -resize "540>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1ahu4b5-020120128-550-fm9apn-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1ahu4b5-0.JPG[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1ahu4b5-0.JPG[0]' -resize "95>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1ahu4b5-020120128-550-zana0f-0'
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.9ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `projects` (`updated_at`, `photo_file_size`, `links`, `wedding`, `photo_updated_at`, `photo_content_type`, `parties`, `title`, `description`, `special`, `photo_file_name`, `created_at`) VALUES ('2012-01-28 07:43:02', 1661454, NULL, 1, '2012-01-28 07:42:57', 'image/jpeg', 0, 'cake 5', 'cake 5', 0, 'IMG_4260.JPG', '2012-01-28 07:43:02')
+[paperclip] Saving attachments.
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/12/small/IMG_4260.JPG
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/12/medium/IMG_4260.JPG
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/12/large/IMG_4260.JPG
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/12/icon/IMG_4260.JPG
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/12/original/IMG_4260.JPG
+  [1m[36mSQL (0.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4638ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:43:02 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (140.6ms)
+Completed 200 OK in 158ms (Views: 146.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at Sat Jan 28 00:43:06 -0700 2012
+  Processing by UsersController#admin as HTML
+  [1m[35mAbout Load (0.4ms)[0m  SELECT `abouts`.* FROM `abouts` ORDER BY created_at DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered users/admin.html.erb within layouts/application (38.8ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Sat Jan 28 00:43:08 -0700 2012
+  Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_form.html.erb (78.5ms)
+Rendered projects/new.html.erb within layouts/application (85.0ms)
+Completed 200 OK in 200ms (Views: 90.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/projects" for 127.0.0.1 at Sat Jan 28 00:43:30 -0700 2012
+  Processing by ProjectsController#create as HTML
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"so33ofAtlTgmjk5La6kF/3g08zPJrb6FpQ0MFtaSMdo=", "utf8"=>"✓", "project"=>{"photo"=>#<ActionDispatch::Http::UploadedFile:0x1035d0df0 @content_type="image/jpeg", @tempfile=#<File:/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/RackMultipart20120128-550-1jy22i-0>, @original_filename="cake2.jpg", @headers="Content-Disposition: form-data; name=\"project[photo]\"; filename=\"cake2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"cake 6", "parties"=>"0", "special"=>"1", "description"=>"cake 6", "wedding"=>"0"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1p9iicm-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1p9iicm-0.jpg[0]' -resize "150>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1p9iicm-020120128-550-wm1orq-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1p9iicm-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1p9iicm-0.jpg[0]' -resize "250>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1p9iicm-020120128-550-1uusu1s-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1p9iicm-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1p9iicm-0.jpg[0]' -resize "540>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1p9iicm-020120128-550-3daat1-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1p9iicm-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1p9iicm-0.jpg[0]' -resize "95>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1p9iicm-020120128-550-d9krfm-0'
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (3.2ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `projects` (`photo_content_type`, `photo_updated_at`, `photo_file_name`, `updated_at`, `description`, `links`, `special`, `title`, `created_at`, `wedding`, `photo_file_size`, `parties`) VALUES ('image/jpeg', '2012-01-28 07:43:30', 'cake2.jpg', '2012-01-28 07:43:30', 'cake 6', NULL, 1, 'cake 6', '2012-01-28 07:43:30', 0, 62248, 0)
+[paperclip] Saving attachments.
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/13/small/cake2.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/13/medium/cake2.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/13/large/cake2.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/13/icon/cake2.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/13/original/cake2.jpg
+  [1m[36mSQL (0.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 404ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:43:30 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (164.7ms)
+Completed 200 OK in 183ms (Views: 170.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at Sat Jan 28 00:43:33 -0700 2012
+  Processing by UsersController#admin as HTML
+  [1m[35mAbout Load (0.4ms)[0m  SELECT `abouts`.* FROM `abouts` ORDER BY created_at DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered users/admin.html.erb within layouts/application (38.7ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Sat Jan 28 00:43:35 -0700 2012
+  Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_form.html.erb (77.9ms)
+Rendered projects/new.html.erb within layouts/application (84.5ms)
+Completed 200 OK in 200ms (Views: 89.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/projects" for 127.0.0.1 at Sat Jan 28 00:43:55 -0700 2012
+  Processing by ProjectsController#create as HTML
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"so33ofAtlTgmjk5La6kF/3g08zPJrb6FpQ0MFtaSMdo=", "utf8"=>"✓", "project"=>{"photo"=>#<ActionDispatch::Http::UploadedFile:0x103a23da8 @content_type="image/jpeg", @tempfile=#<File:/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/RackMultipart20120128-550-3n2nrv-0>, @original_filename="IMG_4260.JPG", @headers="Content-Disposition: form-data; name=\"project[photo]\"; filename=\"IMG_4260.JPG\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"cake 7", "parties"=>"0", "special"=>"0", "description"=>"cake 7", "wedding"=>"1"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-qsn97-0.JPG[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-qsn97-0.JPG[0]' -resize "150>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-qsn97-020120128-550-4apvom-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-qsn97-0.JPG[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-qsn97-0.JPG[0]' -resize "250>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-qsn97-020120128-550-1uwba0v-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-qsn97-0.JPG[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-qsn97-0.JPG[0]' -resize "540>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-qsn97-020120128-550-u34dg7-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-qsn97-0.JPG[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-qsn97-0.JPG[0]' -resize "95>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-qsn97-020120128-550-132trjw-0'
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.9ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `projects` (`photo_content_type`, `photo_file_size`, `photo_updated_at`, `links`, `parties`, `description`, `updated_at`, `photo_file_name`, `special`, `title`, `wedding`, `created_at`) VALUES ('image/jpeg', 1661454, '2012-01-28 07:43:55', NULL, 0, 'cake 7', '2012-01-28 07:43:59', 'IMG_4260.JPG', 0, 'cake 7', 1, '2012-01-28 07:43:59')
+[paperclip] Saving attachments.
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/14/small/IMG_4260.JPG
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/14/medium/IMG_4260.JPG
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/14/large/IMG_4260.JPG
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/14/icon/IMG_4260.JPG
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/14/original/IMG_4260.JPG
+  [1m[36mSQL (0.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4436ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:43:59 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (120.4ms)
+Completed 200 OK in 225ms (Views: 214.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at Sat Jan 28 00:44:02 -0700 2012
+  Processing by UsersController#admin as HTML
+  [1m[35mAbout Load (0.4ms)[0m  SELECT `abouts`.* FROM `abouts` ORDER BY created_at DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered users/admin.html.erb within layouts/application (132.4ms)
+Completed 200 OK in 138ms (Views: 137.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Sat Jan 28 00:44:04 -0700 2012
+  Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_form.html.erb (82.8ms)
+Rendered projects/new.html.erb within layouts/application (89.3ms)
+Completed 200 OK in 124ms (Views: 94.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/projects" for 127.0.0.1 at Sat Jan 28 00:44:21 -0700 2012
+  Processing by ProjectsController#create as HTML
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"so33ofAtlTgmjk5La6kF/3g08zPJrb6FpQ0MFtaSMdo=", "utf8"=>"✓", "project"=>{"photo"=>#<ActionDispatch::Http::UploadedFile:0x103922350 @content_type="image/jpeg", @tempfile=#<File:/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/RackMultipart20120128-550-6a3pp5-0>, @original_filename="cake2.jpg", @headers="Content-Disposition: form-data; name=\"project[photo]\"; filename=\"cake2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"cake 8", "parties"=>"0", "special"=>"1", "description"=>"cake 8", "wedding"=>"0"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-ndujrw-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-ndujrw-0.jpg[0]' -resize "150>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-ndujrw-020120128-550-1f4n6h-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-ndujrw-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-ndujrw-0.jpg[0]' -resize "250>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-ndujrw-020120128-550-10ujys7-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-ndujrw-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-ndujrw-0.jpg[0]' -resize "540>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-ndujrw-020120128-550-y9xne2-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-ndujrw-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-ndujrw-0.jpg[0]' -resize "95>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-ndujrw-020120128-550-1uic0vx-0'
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.8ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `projects` (`special`, `description`, `updated_at`, `photo_file_size`, `created_at`, `photo_updated_at`, `parties`, `title`, `photo_file_name`, `wedding`, `links`, `photo_content_type`) VALUES (1, 'cake 8', '2012-01-28 07:44:21', 62248, '2012-01-28 07:44:21', '2012-01-28 07:44:21', 0, 'cake 8', 'cake2.jpg', 0, NULL, 'image/jpeg')
+[paperclip] Saving attachments.
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/15/small/cake2.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/15/medium/cake2.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/15/large/cake2.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/15/icon/cake2.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/15/original/cake2.jpg
+  [1m[36mSQL (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 330ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:44:21 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (119.0ms)
+Completed 200 OK in 253ms (Views: 124.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at Sat Jan 28 00:44:24 -0700 2012
+  Processing by UsersController#admin as HTML
+  [1m[35mAbout Load (0.4ms)[0m  SELECT `abouts`.* FROM `abouts` ORDER BY created_at DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered users/admin.html.erb within layouts/application (129.4ms)
+Completed 200 OK in 135ms (Views: 133.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Sat Jan 28 00:44:27 -0700 2012
+  Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_form.html.erb (82.4ms)
+Rendered projects/new.html.erb within layouts/application (89.0ms)
+Completed 200 OK in 124ms (Views: 94.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/projects" for 127.0.0.1 at Sat Jan 28 00:44:45 -0700 2012
+  Processing by ProjectsController#create as HTML
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"so33ofAtlTgmjk5La6kF/3g08zPJrb6FpQ0MFtaSMdo=", "utf8"=>"✓", "project"=>{"photo"=>#<ActionDispatch::Http::UploadedFile:0x10388ad20 @content_type="image/jpeg", @tempfile=#<File:/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/RackMultipart20120128-550-884jpb-0>, @original_filename="cake3.jpg", @headers="Content-Disposition: form-data; name=\"project[photo]\"; filename=\"cake3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"cake 10", "parties"=>"0", "special"=>"0", "description"=>"cake 10", "wedding"=>"1"}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-shr921-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-shr921-0.jpg[0]' -resize "150>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-shr921-020120128-550-1l8nui9-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-shr921-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-shr921-0.jpg[0]' -resize "250>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-shr921-020120128-550-1j04j2-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-shr921-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-shr921-0.jpg[0]' -resize "540>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-shr921-020120128-550-he3zp6-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-shr921-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-shr921-0.jpg[0]' -resize "95>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-shr921-020120128-550-1qwtzy8-0'
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (3.2ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `projects` (`special`, `created_at`, `links`, `parties`, `photo_updated_at`, `description`, `photo_content_type`, `wedding`, `photo_file_name`, `title`, `updated_at`, `photo_file_size`) VALUES (0, '2012-01-28 07:44:45', NULL, 0, '2012-01-28 07:44:45', 'cake 10', 'image/jpeg', 1, 'cake3.jpg', 'cake 10', '2012-01-28 07:44:45', 58290)
+[paperclip] Saving attachments.
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/16/small/cake3.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/16/medium/cake3.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/16/large/cake3.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/16/icon/cake3.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/16/original/cake3.jpg
+  [1m[36mSQL (0.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 324ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:44:46 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (123.1ms)
+Completed 200 OK in 136ms (Views: 128.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at Sat Jan 28 00:44:50 -0700 2012
+  Processing by UsersController#admin as HTML
+  [1m[35mAbout Load (0.4ms)[0m  SELECT `abouts`.* FROM `abouts` ORDER BY created_at DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered users/admin.html.erb within layouts/application (112.5ms)
+Completed 200 OK in 118ms (Views: 116.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Sat Jan 28 00:44:51 -0700 2012
+  Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_form.html.erb (164.2ms)
+Rendered projects/new.html.erb within layouts/application (171.1ms)
+Completed 200 OK in 207ms (Views: 176.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/projects" for 127.0.0.1 at Sat Jan 28 00:45:19 -0700 2012
+  Processing by ProjectsController#create as HTML
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"so33ofAtlTgmjk5La6kF/3g08zPJrb6FpQ0MFtaSMdo=", "utf8"=>"✓", "project"=>{"photo"=>#<ActionDispatch::Http::UploadedFile:0x10377a750 @content_type="image/jpeg", @tempfile=#<File:/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/RackMultipart20120128-550-uxkdqu-0>, @original_filename="cake3.jpg", @headers="Content-Disposition: form-data; name=\"project[photo]\"; filename=\"cake3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"cake 10 for real", "parties"=>"0", "special"=>"0", "description"=>"cake 10 for real", "wedding"=>"0"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1gcv2l4-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1gcv2l4-0.jpg[0]' -resize "150>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1gcv2l4-020120128-550-5mwbmx-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1gcv2l4-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1gcv2l4-0.jpg[0]' -resize "250>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1gcv2l4-020120128-550-1pylw2l-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1gcv2l4-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1gcv2l4-0.jpg[0]' -resize "540>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1gcv2l4-020120128-550-xunt75-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1gcv2l4-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1gcv2l4-0.jpg[0]' -resize "95>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1gcv2l4-020120128-550-16mm827-0'
+  [1m[35mSQL (0.3ms)[0m  BEGIN
+  [1m[36mSQL (3.1ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `projects` (`photo_content_type`, `links`, `special`, `updated_at`, `photo_file_size`, `title`, `photo_file_name`, `created_at`, `wedding`, `photo_updated_at`, `parties`, `description`) VALUES ('image/jpeg', NULL, 0, '2012-01-28 07:45:19', 58290, 'cake 10 for real', 'cake3.jpg', '2012-01-28 07:45:19', 0, '2012-01-28 07:45:19', 0, 'cake 10 for real')
+[paperclip] Saving attachments.
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/17/small/cake3.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/17/medium/cake3.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/17/large/cake3.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/17/icon/cake3.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/17/original/cake3.jpg
+  [1m[36mSQL (0.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 322ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:45:19 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (157.3ms)
+Completed 200 OK in 171ms (Views: 162.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at Sat Jan 28 00:45:23 -0700 2012
+  Processing by UsersController#admin as HTML
+  [1m[35mAbout Load (0.4ms)[0m  SELECT `abouts`.* FROM `abouts` ORDER BY created_at DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered users/admin.html.erb within layouts/application (115.8ms)
+Completed 200 OK in 121ms (Views: 120.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Sat Jan 28 00:45:25 -0700 2012
+  Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_form.html.erb (80.3ms)
+Rendered projects/new.html.erb within layouts/application (86.9ms)
+Completed 200 OK in 202ms (Views: 92.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/projects" for 127.0.0.1 at Sat Jan 28 00:45:37 -0700 2012
+  Processing by ProjectsController#create as HTML
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"so33ofAtlTgmjk5La6kF/3g08zPJrb6FpQ0MFtaSMdo=", "utf8"=>"✓", "project"=>{"photo"=>#<ActionDispatch::Http::UploadedFile:0x1036dcd20 @content_type="image/jpeg", @tempfile=#<File:/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/RackMultipart20120128-550-1pbf9gn-0>, @original_filename="cake3.jpg", @headers="Content-Disposition: form-data; name=\"project[photo]\"; filename=\"cake3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"cake 11", "parties"=>"0", "special"=>"0", "description"=>"cake 11", "wedding"=>"0"}}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-9rj4zl-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-9rj4zl-0.jpg[0]' -resize "150>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-9rj4zl-020120128-550-szhg8i-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-9rj4zl-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-9rj4zl-0.jpg[0]' -resize "250>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-9rj4zl-020120128-550-1ddvqzt-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-9rj4zl-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-9rj4zl-0.jpg[0]' -resize "540>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-9rj4zl-020120128-550-bkan8-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-9rj4zl-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-9rj4zl-0.jpg[0]' -resize "95>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-9rj4zl-020120128-550-jfrb5o-0'
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.9ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `projects` (`links`, `title`, `wedding`, `photo_updated_at`, `photo_content_type`, `photo_file_name`, `parties`, `photo_file_size`, `created_at`, `updated_at`, `description`, `special`) VALUES (NULL, 'cake 11', 0, '2012-01-28 07:45:37', 'image/jpeg', 'cake3.jpg', 0, 58290, '2012-01-28 07:45:37', '2012-01-28 07:45:37', 'cake 11', 0)
+[paperclip] Saving attachments.
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/18/small/cake3.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/18/medium/cake3.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/18/large/cake3.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/18/icon/cake3.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/18/original/cake3.jpg
+  [1m[36mSQL (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 420ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:45:37 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (170.2ms)
+Completed 200 OK in 189ms (Views: 176.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at Sat Jan 28 00:45:40 -0700 2012
+  Processing by UsersController#admin as HTML
+  [1m[35mAbout Load (0.4ms)[0m  SELECT `abouts`.* FROM `abouts` ORDER BY created_at DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered users/admin.html.erb within layouts/application (113.6ms)
+Completed 200 OK in 119ms (Views: 118.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Sat Jan 28 00:45:42 -0700 2012
+  Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_form.html.erb (79.8ms)
+Rendered projects/new.html.erb within layouts/application (86.6ms)
+Completed 200 OK in 210ms (Views: 92.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/projects" for 127.0.0.1 at Sat Jan 28 00:45:55 -0700 2012
+  Processing by ProjectsController#create as HTML
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"so33ofAtlTgmjk5La6kF/3g08zPJrb6FpQ0MFtaSMdo=", "utf8"=>"✓", "project"=>{"photo"=>#<ActionDispatch::Http::UploadedFile:0x1036105e0 @content_type="image/jpeg", @tempfile=#<File:/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/RackMultipart20120128-550-5211n3-0>, @original_filename="cake2.jpg", @headers="Content-Disposition: form-data; name=\"project[photo]\"; filename=\"cake2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"cake 12", "parties"=>"0", "special"=>"1", "description"=>"cake 12", "wedding"=>"0"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1cy33lv-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1cy33lv-0.jpg[0]' -resize "150>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1cy33lv-020120128-550-kuvuuc-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1cy33lv-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1cy33lv-0.jpg[0]' -resize "250>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1cy33lv-020120128-550-17bvjrh-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1cy33lv-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1cy33lv-0.jpg[0]' -resize "540>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1cy33lv-020120128-550-10h0s8r-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1cy33lv-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1cy33lv-0.jpg[0]' -resize "95>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1cy33lv-020120128-550-1x7ayna-0'
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (3.2ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `projects` (`wedding`, `photo_updated_at`, `title`, `parties`, `updated_at`, `photo_file_name`, `description`, `special`, `created_at`, `photo_content_type`, `photo_file_size`, `links`) VALUES (0, '2012-01-28 07:45:55', 'cake 12', 0, '2012-01-28 07:45:55', 'cake2.jpg', 'cake 12', 1, '2012-01-28 07:45:55', 'image/jpeg', 62248, NULL)
+[paperclip] Saving attachments.
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/19/small/cake2.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/19/medium/cake2.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/19/large/cake2.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/19/icon/cake2.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/19/original/cake2.jpg
+  [1m[36mSQL (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 412ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:45:55 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (176.4ms)
+Completed 200 OK in 195ms (Views: 182.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at Sat Jan 28 00:45:59 -0700 2012
+  Processing by UsersController#admin as HTML
+  [1m[35mAbout Load (0.4ms)[0m  SELECT `abouts`.* FROM `abouts` ORDER BY created_at DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered users/admin.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Sat Jan 28 00:46:00 -0700 2012
+  Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_form.html.erb (79.1ms)
+Rendered projects/new.html.erb within layouts/application (86.1ms)
+Completed 200 OK in 185ms (Views: 91.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/projects" for 127.0.0.1 at Sat Jan 28 00:46:14 -0700 2012
+  Processing by ProjectsController#create as HTML
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"so33ofAtlTgmjk5La6kF/3g08zPJrb6FpQ0MFtaSMdo=", "utf8"=>"✓", "project"=>{"photo"=>#<ActionDispatch::Http::UploadedFile:0x10386ed78 @content_type="image/jpeg", @tempfile=#<File:/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/RackMultipart20120128-550-1hp4ej1-0>, @original_filename="IMG_4260.JPG", @headers="Content-Disposition: form-data; name=\"project[photo]\"; filename=\"IMG_4260.JPG\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"cake 13", "parties"=>"0", "special"=>"0", "description"=>"cake 13", "wedding"=>"1"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-4m7xg6-0.JPG[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-4m7xg6-0.JPG[0]' -resize "150>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-4m7xg6-020120128-550-zgp4e8-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-4m7xg6-0.JPG[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-4m7xg6-0.JPG[0]' -resize "250>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-4m7xg6-020120128-550-1pm9una-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-4m7xg6-0.JPG[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-4m7xg6-0.JPG[0]' -resize "540>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-4m7xg6-020120128-550-13605fv-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-4m7xg6-0.JPG[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-4m7xg6-0.JPG[0]' -resize "95>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-4m7xg6-020120128-550-zczj1d-0'
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (3.1ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `projects` (`links`, `title`, `photo_updated_at`, `photo_content_type`, `parties`, `photo_file_size`, `wedding`, `special`, `photo_file_name`, `created_at`, `description`, `updated_at`) VALUES (NULL, 'cake 13', '2012-01-28 07:46:14', 'image/jpeg', 0, 1661454, 1, 0, 'IMG_4260.JPG', '2012-01-28 07:46:19', 'cake 13', '2012-01-28 07:46:19')
+[paperclip] Saving attachments.
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/20/small/IMG_4260.JPG
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/20/medium/IMG_4260.JPG
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/20/large/IMG_4260.JPG
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/20/icon/IMG_4260.JPG
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/20/original/IMG_4260.JPG
+  [1m[36mSQL (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4511ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:46:19 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (129.1ms)
+Completed 200 OK in 275ms (Views: 134.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Sat Jan 28 00:46:28 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+Rendered projects/index.html.erb within layouts/application (104.9ms)
+Completed 200 OK in 118ms (Views: 110.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/projects/16" for 127.0.0.1 at Sat Jan 28 00:49:30 -0700 2012
+  Processing by ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"so33ofAtlTgmjk5La6kF/3g08zPJrb6FpQ0MFtaSMdo=", "id"=>"16"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 16 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+[paperclip] Scheduling attachments for deletion.
+  [1m[35mAREL (0.4ms)[0m  DELETE FROM `projects` WHERE `projects`.`id` = 16
+[paperclip] Deleting attachments.
+[paperclip] deleting /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/16/original/cake3.jpg
+[paperclip] deleting /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/16/small/cake3.jpg
+[paperclip] deleting /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/16/medium/cake3.jpg
+[paperclip] deleting /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/16/large/cake3.jpg
+[paperclip] deleting /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/16/icon/cake3.jpg
+  [1m[36mSQL (0.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/projects
+Completed 302 Found in 129ms
+
+
+Started GET "/projects" for 127.0.0.1 at Sat Jan 28 00:49:30 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (202.9ms)
+Completed 200 OK in 217ms (Views: 208.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at Sat Jan 28 00:49:36 -0700 2012
+  Processing by UsersController#admin as HTML
+  [1m[35mAbout Load (0.4ms)[0m  SELECT `abouts`.* FROM `abouts` ORDER BY created_at DESC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered users/admin.html.erb within layouts/application (113.6ms)
+Completed 200 OK in 119ms (Views: 118.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Sat Jan 28 00:49:37 -0700 2012
+  Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_form.html.erb (105.2ms)
+Rendered projects/new.html.erb within layouts/application (111.9ms)
+Completed 200 OK in 147ms (Views: 117.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/projects" for 127.0.0.1 at Sat Jan 28 00:49:53 -0700 2012
+  Processing by ProjectsController#create as HTML
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"so33ofAtlTgmjk5La6kF/3g08zPJrb6FpQ0MFtaSMdo=", "utf8"=>"✓", "project"=>{"photo"=>#<ActionDispatch::Http::UploadedFile:0x1039e1610 @content_type="image/jpeg", @tempfile=#<File:/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/RackMultipart20120128-550-1yfcqx2-0>, @original_filename="cake2.jpg", @headers="Content-Disposition: form-data; name=\"project[photo]\"; filename=\"cake2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"Cool Cake", "parties"=>"0", "special"=>"1", "description"=>"Cool", "wedding"=>"0"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1bcecrt-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1bcecrt-0.jpg[0]' -resize "150>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1bcecrt-020120128-550-1t23eba-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1bcecrt-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1bcecrt-0.jpg[0]' -resize "250>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1bcecrt-020120128-550-12jkznt-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1bcecrt-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1bcecrt-0.jpg[0]' -resize "540>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1bcecrt-020120128-550-1f7nkqv-0'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1bcecrt-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1bcecrt-0.jpg[0]' -resize "95>" '/var/folders/24/24aCbtOxGYmp6t+LQ4nGD++++TI/-Tmp-/stream20120128-550-1bcecrt-020120128-550-cnkz9i-0'
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (3.0ms)[0m  [1mdescribe `projects`[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `projects` (`description`, `photo_file_name`, `links`, `title`, `photo_updated_at`, `wedding`, `updated_at`, `created_at`, `photo_content_type`, `parties`, `photo_file_size`, `special`) VALUES ('Cool', 'cake2.jpg', NULL, 'Cool Cake', '2012-01-28 07:49:54', 0, '2012-01-28 07:49:54', '2012-01-28 07:49:54', 'image/jpeg', 0, 62248, 1)
+[paperclip] Saving attachments.
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/21/small/cake2.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/21/medium/cake2.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/21/large/cake2.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/21/icon/cake2.jpg
+[paperclip] saving /Users/Ben/Desktop/Work/sidework/msc/public/assets/project/21/original/cake2.jpg
+  [1m[36mSQL (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 339ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:49:54 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (136.9ms)
+Completed 200 OK in 241ms (Views: 142.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:50:36 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (219.8ms)
+Completed 200 OK in 235ms (Views: 225.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:50:50 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.7ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (148.5ms)
+Completed 200 OK in 163ms (Views: 153.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:50:59 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (128.5ms)
+Completed 200 OK in 142ms (Views: 133.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:51:54 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.7ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (129.0ms)
+Completed 200 OK in 144ms (Views: 134.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:52:03 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (142.8ms)
+Completed 200 OK in 156ms (Views: 148.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:52:17 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (131.3ms)
+Completed 200 OK in 211ms (Views: 136.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:52:40 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (210.5ms)
+Completed 200 OK in 225ms (Views: 215.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:52:48 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (225.6ms)
+Completed 200 OK in 239ms (Views: 231.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:54:33 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (209.4ms)
+Completed 200 OK in 223ms (Views: 214.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:54:39 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (147.6ms)
+Completed 200 OK in 161ms (Views: 152.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 00:55:44 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (131.2ms)
+Completed 200 OK in 145ms (Views: 136.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:00:15 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (131.2ms)
+Completed 200 OK in 145ms (Views: 136.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:00:33 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (128.4ms)
+Completed 200 OK in 142ms (Views: 133.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:00:49 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (125.9ms)
+Completed 200 OK in 235ms (Views: 131.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:01:14 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (193.9ms)
+Completed 200 OK in 207ms (Views: 199.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/?which=wedding" for 127.0.0.1 at Sat Jan 28 01:01:39 -0700 2012
+  Processing by ProjectsController#index as HTML
+  Parameters: {"which"=>"wedding"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (223.8ms)
+Completed 200 OK in 239ms (Views: 229.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/?which=wedding" for 127.0.0.1 at Sat Jan 28 01:01:48 -0700 2012
+  Processing by ProjectsController#index as HTML
+  Parameters: {"which"=>"wedding"}
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (148.2ms)
+Completed 200 OK in 162ms (Views: 153.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:03:06 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (114.3ms)
+Completed 200 OK in 129ms (Views: 119.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:12:08 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (176.9ms)
+Completed 200 OK in 191ms (Views: 182.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:12:23 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (148.7ms)
+Completed 200 OK in 162ms (Views: 154.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:12:34 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (131.2ms)
+Completed 200 OK in 145ms (Views: 136.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/?which=wedding" for 127.0.0.1 at Sat Jan 28 01:12:42 -0700 2012
+  Processing by ProjectsController#index as HTML
+  Parameters: {"which"=>"wedding"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (191.8ms)
+Completed 200 OK in 206ms (Views: 197.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:14:44 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/index.html.erb within layouts/application (200.5ms)
+Completed 200 OK in 213ms (Views: 205.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/projects/get_more?count=6" for 127.0.0.1 at Sat Jan 28 01:14:49 -0700 2012
+  Processing by ProjectsController#show as 
+  Parameters: {"id"=>"get_more", "count"=>"6"}
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 0 LIMIT 1
+Completed   in 14ms
+
+ActiveRecord::RecordNotFound (Couldn't find Project with ID=get_more):
+  app/controllers/projects_controller.rb:27:in `show'
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.3ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (44.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:15:31 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/index.html.erb within layouts/application (139.9ms)
+Completed 200 OK in 153ms (Views: 144.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 01:15:40 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+Completed   in 115ms
+
+ActionView::MissingTemplate (Missing template projects/get_more with {:formats=>[:html, :text, :js, :css, :ics, :csv, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json], :handlers=>[:rxml, :erb, :rjs, :builder, :rhtml], :locale=>[:en, :en]} in view paths "/Users/Ben/Desktop/Work/sidework/msc/app/views"):
+  
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:16:03 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/index.html.erb within layouts/application (120.2ms)
+Completed 200 OK in 134ms (Views: 125.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 01:16:05 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+Completed   in 15ms
+
+ActionView::MissingTemplate (Missing template projects/get_more with {:formats=>[:html, :text, :js, :css, :ics, :csv, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json], :handlers=>[:rxml, :erb, :rjs, :builder, :rhtml], :locale=>[:en, :en]} in view paths "/Users/Ben/Desktop/Work/sidework/msc/app/views"):
+  
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:16:47 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/index.html.erb within layouts/application (118.0ms)
+Completed 200 OK in 131ms (Views: 123.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 01:16:50 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+Rendered text template (0.0ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:17:09 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/index.html.erb within layouts/application (117.2ms)
+Completed 200 OK in 131ms (Views: 122.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 01:17:12 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:17:42 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/index.html.erb within layouts/application (115.4ms)
+Completed 200 OK in 129ms (Views: 120.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 01:17:44 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:18:04 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/index.html.erb within layouts/application (195.1ms)
+Completed 200 OK in 209ms (Views: 200.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 01:18:06 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:29:50 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (1.3ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/index.html.erb within layouts/application (195.9ms)
+Completed 200 OK in 212ms (Views: 202.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/get_more?count=6&script" for 127.0.0.1 at Sat Jan 28 01:29:53 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"script"=>nil, "count"=>"6"}
+Completed   in 6ms
+
+ActionView::MissingTemplate (Missing template projects/get_more with {:formats=>[:html], :handlers=>[:rxml, :erb, :rjs, :builder, :rhtml], :locale=>[:en, :en]} in view paths "/Users/Ben/Desktop/Work/sidework/msc/app/views"):
+  app/controllers/projects_controller.rb:16:in `get_more'
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:30:29 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/index.html.erb within layouts/application (138.5ms)
+Completed 200 OK in 152ms (Views: 143.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6&script" for 127.0.0.1 at Sat Jan 28 01:30:32 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"script"=>nil, "count"=>"6"}
+Completed   in 5ms
+
+ActionView::MissingTemplate (Missing template projects/get_more with {:formats=>[:html], :handlers=>[:rxml, :erb, :rjs, :builder, :rhtml], :locale=>[:en, :en]} in view paths "/Users/Ben/Desktop/Work/sidework/msc/app/views"):
+  app/controllers/projects_controller.rb:16:in `get_more'
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:32:38 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/index.html.erb within layouts/application (138.8ms)
+Completed 200 OK in 152ms (Views: 143.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 01:32:41 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+Completed   in 5ms
+
+ActionView::MissingTemplate (Missing template projects/get_more with {:formats=>[:html], :handlers=>[:rxml, :erb, :rjs, :builder, :rhtml], :locale=>[:en, :en]} in view paths "/Users/Ben/Desktop/Work/sidework/msc/app/views"):
+  app/controllers/projects_controller.rb:16:in `get_more'
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:33:04 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/index.html.erb within layouts/application (120.5ms)
+Completed 200 OK in 134ms (Views: 125.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 01:33:07 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+Completed   in 5ms
+
+ActionView::MissingTemplate (Missing template projects/get_more with {:formats=>[:html], :handlers=>[:rxml, :erb, :rjs, :builder, :rhtml], :locale=>[:en, :en]} in view paths "/Users/Ben/Desktop/Work/sidework/msc/app/views"):
+  app/controllers/projects_controller.rb:16:in `get_more'
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:35:25 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/index.html.erb within layouts/application (138.2ms)
+Completed 200 OK in 152ms (Views: 143.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 01:35:28 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+Rendered projects/get_more.js.erb (0.3ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:39:03 -0700 2012
+
+SyntaxError (/Users/Ben/Desktop/Work/sidework/msc/app/controllers/projects_controller.rb:5: syntax error, unexpected '}', expecting ')'):
+  
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:39:37 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (177.7ms)
+Rendered projects/index.html.erb within layouts/application (183.6ms)
+Completed 200 OK in 198ms (Views: 189.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 01:39:40 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+Rendered projects/get_more.js.erb (0.4ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:41:14 -0700 2012
+
+SyntaxError (/Users/Ben/Desktop/Work/sidework/msc/app/controllers/projects_controller.rb:5: syntax error, unexpected '}', expecting ')'):
+  
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:41:32 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (205.2ms)
+Rendered projects/index.html.erb within layouts/application (210.7ms)
+Completed 200 OK in 224ms (Views: 216.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 01:41:36 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+Completed   in 8ms
+
+ArgumentError (Unknown key(s): start_count):
+  app/controllers/projects_controller.rb:5:in `get_more'
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:42:07 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (177.2ms)
+Rendered projects/index.html.erb within layouts/application (182.8ms)
+Completed 200 OK in 197ms (Views: 188.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 01:42:10 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+Rendered projects/_more.html.erb (1.4ms)
+Rendered projects/get_more.js.erb (3.5ms)
+Completed   in 38ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    1:   <% @projects.each do |project| %>
+    2:     <div class="single_cake_wrapper">
+    3:       <div class="cake_image_div"><%= link_to image_tag(project.photo.url(:medium), :class => 'single_photo'), project.photo.url(:large), :class => 'pop', :rel => 'gallery', :title => project.title %></div>
+    4:       <div class="cake_description_div"><span class="cake_title"><%= project.title %></span> <br/><%= project.description %></div>
+  app/views/projects/_more.html.erb:1:in `_app_views_projects__more_html_erb__365636941_2175133120_2822590'
+  app/views/projects/get_more.js.erb:1:in `_app_views_projects_get_more_js_erb___1714184305_2175162360_0'
+  app/controllers/projects_controller.rb:7:in `get_more'
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (107.8ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (116.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:43:51 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (180.2ms)
+Rendered projects/index.html.erb within layouts/application (185.7ms)
+Completed 200 OK in 200ms (Views: 190.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 01:43:53 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (153.5ms)
+Rendered projects/get_more.js.erb (156.2ms)
+Completed 200 OK in 187ms (Views: 176.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:45:47 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (115.8ms)
+Rendered projects/index.html.erb within layouts/application (121.3ms)
+Completed 200 OK in 200ms (Views: 126.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 01:45:50 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (136.2ms)
+Rendered projects/get_more.js.erb (138.7ms)
+Completed 200 OK in 166ms (Views: 158.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:46:38 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (179.0ms)
+Rendered projects/index.html.erb within layouts/application (185.6ms)
+Completed 200 OK in 199ms (Views: 191.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 01:46:40 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (247.8ms)
+Rendered projects/get_more.js.erb (258.9ms)
+Completed 200 OK in 300ms (Views: 291.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:46:48 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (177.1ms)
+Rendered projects/index.html.erb within layouts/application (182.7ms)
+Completed 200 OK in 197ms (Views: 188.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 01:46:51 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (483.0ms)
+Rendered projects/get_more.js.erb (485.8ms)
+Completed 200 OK in 519ms (Views: 510.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:47:31 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (181.9ms)
+Rendered projects/index.html.erb within layouts/application (187.9ms)
+Completed 200 OK in 203ms (Views: 193.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 01:47:32 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (163.8ms)
+Rendered projects/get_more.js.erb (166.4ms)
+Completed 200 OK in 197ms (Views: 188.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:48:36 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (116.2ms)
+Rendered projects/index.html.erb within layouts/application (121.6ms)
+Completed 200 OK in 135ms (Views: 126.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 01:48:37 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (131.5ms)
+Rendered projects/get_more.js.erb (134.6ms)
+Completed 200 OK in 175ms (Views: 163.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:57:05 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (177.4ms)
+Rendered projects/index.html.erb within layouts/application (183.1ms)
+Completed 200 OK in 198ms (Views: 188.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 01:57:11 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (109.3ms)
+Rendered projects/get_more.js.erb (111.9ms)
+Completed 200 OK in 245ms (Views: 237.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:58:56 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (186.1ms)
+Rendered projects/index.html.erb within layouts/application (191.6ms)
+Completed 200 OK in 205ms (Views: 196.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:59:33 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (221.1ms)
+Rendered projects/index.html.erb within layouts/application (226.4ms)
+Completed 200 OK in 240ms (Views: 231.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 01:59:48 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (227.7ms)
+Rendered projects/index.html.erb within layouts/application (233.1ms)
+Completed 200 OK in 247ms (Views: 238.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:00:14 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (115.3ms)
+Rendered projects/index.html.erb within layouts/application (120.8ms)
+Completed 200 OK in 220ms (Views: 125.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:00:27 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (115.9ms)
+Rendered projects/index.html.erb within layouts/application (121.3ms)
+Completed 200 OK in 135ms (Views: 126.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:01:12 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (175.7ms)
+Rendered projects/index.html.erb within layouts/application (181.5ms)
+Completed 200 OK in 195ms (Views: 186.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:01:15 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (136.9ms)
+Rendered projects/get_more.js.erb (139.4ms)
+Completed 200 OK in 166ms (Views: 158.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:07:35 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (117.8ms)
+Rendered projects/index.html.erb within layouts/application (124.1ms)
+Completed 200 OK in 203ms (Views: 129.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/images/loader.gif" for 127.0.0.1 at Sat Jan 28 02:07:36 -0700 2012
+
+ActionController::RoutingError (No route matches "/images/loader.gif"):
+  
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:07:57 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (140.8ms)
+Rendered projects/index.html.erb within layouts/application (207.5ms)
+Completed 200 OK in 222ms (Views: 212.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/images/loader.gif" for 127.0.0.1 at Sat Jan 28 02:07:57 -0700 2012
+
+ActionController::RoutingError (No route matches "/images/loader.gif"):
+  
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:08:42 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (198.1ms)
+Rendered projects/index.html.erb within layouts/application (204.1ms)
+Completed 200 OK in 218ms (Views: 209.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:08:51 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (202.1ms)
+Rendered projects/index.html.erb within layouts/application (207.8ms)
+Completed 200 OK in 222ms (Views: 213.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:10:09 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (181.2ms)
+Rendered projects/index.html.erb within layouts/application (187.8ms)
+Completed 200 OK in 201ms (Views: 192.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:15:23 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (314.1ms)
+Rendered projects/index.html.erb within layouts/application (320.0ms)
+Completed 200 OK in 345ms (Views: 336.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:16:08 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (117.6ms)
+Rendered projects/index.html.erb within layouts/application (123.4ms)
+Completed 200 OK in 137ms (Views: 128.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:16:38 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (191.0ms)
+Rendered projects/index.html.erb within layouts/application (197.1ms)
+Completed 200 OK in 211ms (Views: 202.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:17:11 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (182.5ms)
+Rendered projects/index.html.erb within layouts/application (188.9ms)
+Completed 200 OK in 204ms (Views: 194.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:19:22 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (266.0ms)
+Rendered projects/index.html.erb within layouts/application (272.0ms)
+Completed 200 OK in 324ms (Views: 315.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:19:33 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (519.1ms)
+Rendered projects/index.html.erb within layouts/application (528.0ms)
+Completed 200 OK in 544ms (Views: 534.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:19:44 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (233.9ms)
+Rendered projects/index.html.erb within layouts/application (240.1ms)
+Completed 200 OK in 254ms (Views: 245.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:21:08 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (118.1ms)
+Rendered projects/index.html.erb within layouts/application (124.1ms)
+Completed 200 OK in 204ms (Views: 129.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:21:23 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (119.8ms)
+Rendered projects/index.html.erb within layouts/application (125.7ms)
+Completed 200 OK in 140ms (Views: 131.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:21:38 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (177.8ms)
+Rendered projects/index.html.erb within layouts/application (183.5ms)
+Completed 200 OK in 197ms (Views: 188.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:22:08 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+ERROR: compiling _app_views_projects_index_html_erb___1139042046_2175229200_0 RAISED compile error
+/Users/Ben/Desktop/Work/sidework/msc/app/views/projects/index.html.erb:12: syntax error, unexpected ':', expecting ')'
+... 'ajax-loader-1.gif', :height:"10px", :style => 'vertical-al...
+                              ^
+/Users/Ben/Desktop/Work/sidework/msc/app/views/projects/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+...loader-1.gif', :height:"10px", :style => 'vertical-align:mid...
+                              ^
+Function body:           def _app_views_projects_index_html_erb___1139042046_2175229200_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "projects/index";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div id="wrapper" class="BoardLayout">
+
+<div class="cakes_wrapper" id="cakes_wrapper">
+  ');@output_buffer.append= ( render 'more' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</div>
+
+<div class="more_cake_wrapper">
+  <div class="load_more_cakes">
+    Load More Cakes
+  </div>
+  <div id="loader">
+    ');@output_buffer.append= ( image_tag 'ajax-loader-1.gif', :height:"10px", :style => 'vertical-align:middle;' );@output_buffer.safe_concat(' Frosting more cakes
+  </div>
+</div>
+
+</div>
+
+
+
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/Ben/Desktop/Work/sidework/msc/app/views/projects/index.html.erb:23:in `compile'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_view/template.rb:134:in `render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/notifications.rb:54:in `instrument'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_view/template.rb:127:in `render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:59:in `_render_template'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_view/render/rendering.rb:26:in `render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:93:in `render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/Ben/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activerecord-3.0.7/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:14:in `default_render'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/mime_responds.rb:192:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+/Users/Ben/Desktop/Work/sidework/msc/app/controllers/projects_controller.rb:17:in `index'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:150:in `process_action'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:436:in `_run__46567664__process_action__199225275__callbacks'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:410:in `send'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:94:in `send'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/notifications.rb:52:in `instrument'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/abstract_controller/base.rb:119:in `process'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/abstract_controller/rendering.rb:41:in `process'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_controller/metal.rb:178:in `action'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/methodoverride.rb:24:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:32:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:12:in `cache'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:31:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/sendfile.rb:106:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/railties-3.0.7/lib/rails/rack/logger.rb:13:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/runtime.rb:17:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-3.0.7/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/lock.rb:11:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/lock.rb:11:in `synchronize'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/lock.rb:11:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/railties-3.0.7/lib/rails/application.rb:168:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/railties-3.0.7/lib/rails/application.rb:77:in `send'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/railties-3.0.7/lib/rails/application.rb:77:in `method_missing'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/railties-3.0.7/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/content_length.rb:13:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/chunked.rb:15:in `call'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/handler/mongrel.rb:67:in `process'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/handler/mongrel.rb:38:in `run'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.2.4/lib/rack/server.rb:217:in `start'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/railties-3.0.7/lib/rails/commands/server.rb:65:in `start'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/railties-3.0.7/lib/rails/commands.rb:30
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/railties-3.0.7/lib/rails/commands.rb:27:in `tap'
+/Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/railties-3.0.7/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered projects/index.html.erb within layouts/application (0.8ms)
+Completed   in 15ms
+
+ActionView::Template::Error (compile error
+/Users/Ben/Desktop/Work/sidework/msc/app/views/projects/index.html.erb:12: syntax error, unexpected ':', expecting ')'
+... 'ajax-loader-1.gif', :height:"10px", :style => 'vertical-al...
+                              ^
+/Users/Ben/Desktop/Work/sidework/msc/app/views/projects/index.html.erb:12: syntax error, unexpected ',', expecting ')'
+...loader-1.gif', :height:"10px", :style => 'vertical-align:mid...
+                              ^):
+    9:     Load More Cakes
+    10:   </div>
+    11:   <div id="loader">
+    12:     <%= image_tag 'ajax-loader-1.gif', :height:"10px", :style => 'vertical-align:middle;' %> Frosting more cakes
+    13:   </div>
+    14: </div>
+    15: 
+  app/views/projects/index.html.erb:23:in `compile'
+  app/controllers/projects_controller.rb:17:in `index'
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (105.4ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (113.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:22:19 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (130.9ms)
+Rendered projects/index.html.erb within layouts/application (197.2ms)
+Completed 200 OK in 215ms (Views: 206.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:23:26 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (239.6ms)
+Rendered projects/index.html.erb within layouts/application (246.7ms)
+Completed 200 OK in 313ms (Views: 304.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:23:37 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (184.5ms)
+Rendered projects/index.html.erb within layouts/application (190.7ms)
+Completed 200 OK in 205ms (Views: 196.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:23:50 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (204.2ms)
+Rendered projects/index.html.erb within layouts/application (210.2ms)
+Completed 200 OK in 224ms (Views: 215.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:23:58 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (200.3ms)
+Rendered projects/index.html.erb within layouts/application (206.1ms)
+Completed 200 OK in 220ms (Views: 211.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:24:08 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (116.8ms)
+Rendered projects/index.html.erb within layouts/application (122.8ms)
+Completed 200 OK in 223ms (Views: 128.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:24:17 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (118.1ms)
+Rendered projects/index.html.erb within layouts/application (124.1ms)
+Completed 200 OK in 139ms (Views: 130.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:25:38 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (178.3ms)
+Rendered projects/index.html.erb within layouts/application (183.9ms)
+Completed 200 OK in 197ms (Views: 188.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:27:16 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (199.5ms)
+Rendered projects/index.html.erb within layouts/application (205.5ms)
+Completed 200 OK in 220ms (Views: 212.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:27:46 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (203.9ms)
+Rendered projects/index.html.erb within layouts/application (209.5ms)
+Completed 200 OK in 223ms (Views: 214.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:27:58 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (262.8ms)
+Rendered projects/index.html.erb within layouts/application (268.3ms)
+Completed 200 OK in 282ms (Views: 273.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:28:11 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (225.9ms)
+Rendered projects/index.html.erb within layouts/application (231.7ms)
+Completed 200 OK in 245ms (Views: 237.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:28:53 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.8ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (117.5ms)
+Rendered projects/index.html.erb within layouts/application (123.2ms)
+Completed 200 OK in 226ms (Views: 128.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:29:09 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (117.6ms)
+Rendered projects/index.html.erb within layouts/application (123.3ms)
+Completed 200 OK in 137ms (Views: 128.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:29:21 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (177.1ms)
+Rendered projects/index.html.erb within layouts/application (182.9ms)
+Completed 200 OK in 197ms (Views: 188.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:29:33 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (180.5ms)
+Rendered projects/index.html.erb within layouts/application (186.3ms)
+Completed 200 OK in 200ms (Views: 191.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:29:43 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (204.7ms)
+Rendered projects/index.html.erb within layouts/application (210.5ms)
+Completed 200 OK in 224ms (Views: 215.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:29:55 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (242.7ms)
+Rendered projects/index.html.erb within layouts/application (249.8ms)
+Completed 200 OK in 263ms (Views: 255.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:30:46 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (180.8ms)
+Rendered projects/index.html.erb within layouts/application (187.3ms)
+Completed 200 OK in 201ms (Views: 193.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:31:00 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (116.4ms)
+Rendered projects/index.html.erb within layouts/application (122.4ms)
+Completed 200 OK in 137ms (Views: 127.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:31:21 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (141.1ms)
+Rendered projects/index.html.erb within layouts/application (147.2ms)
+Completed 200 OK in 162ms (Views: 153.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:31:23 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (138.3ms)
+Rendered projects/get_more.js.erb (140.8ms)
+Completed 200 OK in 170ms (Views: 161.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:32:25 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (115.9ms)
+Rendered projects/index.html.erb within layouts/application (121.9ms)
+Completed 200 OK in 202ms (Views: 127.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:32:28 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (118.3ms)
+Rendered projects/get_more.js.erb (120.8ms)
+Completed 200 OK in 149ms (Views: 140.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:33:09 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (179.1ms)
+Rendered projects/index.html.erb within layouts/application (185.2ms)
+Completed 200 OK in 199ms (Views: 190.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:33:12 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (224.9ms)
+Rendered projects/get_more.js.erb (227.5ms)
+Completed 200 OK in 256ms (Views: 247.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=12" for 127.0.0.1 at Sat Jan 28 02:33:14 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"12"}
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (119.0ms)
+Rendered projects/get_more.js.erb (121.6ms)
+Completed 200 OK in 150ms (Views: 140.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:36:33 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (134.8ms)
+Rendered projects/index.html.erb within layouts/application (141.5ms)
+Completed 200 OK in 236ms (Views: 227.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:36:36 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+Completed   in 7ms
+
+ArgumentError (Unknown key(s): skip):
+  app/controllers/projects_controller.rb:6:in `get_more'
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:37:19 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (183.2ms)
+Rendered projects/index.html.erb within layouts/application (188.7ms)
+Completed 200 OK in 203ms (Views: 194.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:37:22 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+Completed   in 111ms
+
+NoMethodError (undefined method `skip' for #<Array:0x1034eca38>):
+  app/controllers/projects_controller.rb:6:in `get_more'
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.6ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:42:47 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (193.4ms)
+Rendered projects/index.html.erb within layouts/application (199.1ms)
+Completed 200 OK in 212ms (Views: 204.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:42:50 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[35mProject Load (20.8ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mProject Load (0.8ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (39.9ms)
+Rendered projects/get_more.js.erb (42.4ms)
+Completed 200 OK in 207ms (Views: 61.1ms | ActiveRecord: 21.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:43:36 -0700 2012
+
+SyntaxError (/Users/Ben/Desktop/Work/sidework/msc/app/controllers/projects_controller.rb:12: syntax error, unexpected ':', expecting ')'
+...@projects_already_displayed] :order => "created_at DESC", :l...
+                              ^
+/Users/Ben/Desktop/Work/sidework/msc/app/controllers/projects_controller.rb:12: syntax error, unexpected ',', expecting kEND
+...] :order => "created_at DESC", :limit => 6)
+                              ^):
+  
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:43:45 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (115.9ms)
+Rendered projects/index.html.erb within layouts/application (121.4ms)
+Completed 200 OK in 212ms (Views: 126.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:43:48 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mProject Load (37.5ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15)) ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (98.6ms)
+Rendered projects/get_more.js.erb (101.1ms)
+Completed 200 OK in 184ms (Views: 125.0ms | ActiveRecord: 38.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:48:05 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (189.9ms)
+Rendered projects/index.html.erb within layouts/application (195.6ms)
+Completed 200 OK in 209ms (Views: 200.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:48:11 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15)) ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (122.2ms)
+Rendered projects/get_more.js.erb (124.7ms)
+Completed 200 OK in 165ms (Views: 144.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:48:40 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (178.5ms)
+Rendered projects/index.html.erb within layouts/application (184.1ms)
+Completed 200 OK in 197ms (Views: 189.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:48:44 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15)) ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (39.0ms)
+Rendered projects/get_more.js.erb (41.6ms)
+Completed 200 OK in 180ms (Views: 60.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/get_more?count=12" for 127.0.0.1 at Sat Jan 28 02:48:48 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"12"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 12
+  [1m[36mProject Load (0.7ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15,14,13,12,11,10,9)) ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (27.6ms)
+Rendered projects/get_more.js.erb (30.0ms)
+Completed 200 OK in 170ms (Views: 49.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/get_more?count=13" for 127.0.0.1 at Sat Jan 28 02:48:51 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"13"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 13[0m
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15,14,13,12,11,10,9,8)) ORDER BY created_at DESC LIMIT 6
+Rendered projects/_more.html.erb (0.7ms)
+Rendered projects/get_more.js.erb (2.6ms)
+Completed 200 OK in 45ms (Views: 22.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:49:43 -0700 2012
+  Processing by ProjectsController#index as HTML
+Completed   in 7ms
+
+NameError (undefined local variable or method `limit' for #<ProjectsController:0x103520270>):
+  app/controllers/projects_controller.rb:15:in `index'
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.4ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:50:04 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (114.5ms)
+Rendered projects/index.html.erb within layouts/application (120.1ms)
+Completed 200 OK in 218ms (Views: 125.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:50:07 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15)) ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (106.3ms)
+Rendered projects/get_more.js.erb (108.7ms)
+Completed 200 OK in 150ms (Views: 128.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:50:45 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.7ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (179.8ms)
+Rendered projects/index.html.erb within layouts/application (185.8ms)
+Completed 200 OK in 200ms (Views: 191.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:50:48 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15)) ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (133.6ms)
+Rendered projects/get_more.js.erb (136.3ms)
+Completed   in 178ms
+
+ActionView::Template::Error (uninitialized class variable @@limit in ActionView::CompiledTemplates):
+    1: $("#cakes_wrapper").append("<%= escape_javascript(render("more")) %>");
+    2: 
+    3: alert("<%= escape_javascript(@@limit) %>");
+    4: 
+    5: which_cakes();	  
+    6: 
+  app/views/projects/get_more.js.erb:3:in `_app_views_projects_get_more_js_erb___1714184305_2174656780_0'
+  app/controllers/projects_controller.rb:11:in `get_more'
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.6ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:51:23 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (184.3ms)
+Rendered projects/index.html.erb within layouts/application (190.1ms)
+Completed 200 OK in 204ms (Views: 195.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:51:26 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mProject Load (0.7ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15)) ORDER BY created_at DESC LIMIT 6
+Completed   in 120ms
+
+NameError (uninitialized class variable @@limt in ProjectsController):
+  app/controllers/projects_controller.rb:11:in `get_more'
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.1ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:51:38 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (181.8ms)
+Rendered projects/index.html.erb within layouts/application (187.4ms)
+Completed 200 OK in 201ms (Views: 192.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:51:40 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15)) ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (125.2ms)
+Rendered projects/get_more.js.erb (127.9ms)
+Completed 200 OK in 169ms (Views: 147.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:51:50 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (179.9ms)
+Rendered projects/index.html.erb within layouts/application (185.5ms)
+Completed 200 OK in 199ms (Views: 190.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:51:52 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15)) ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (36.9ms)
+Rendered projects/get_more.js.erb (39.5ms)
+Completed 200 OK in 179ms (Views: 58.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:52:10 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (117.2ms)
+Rendered projects/index.html.erb within layouts/application (122.7ms)
+Completed 200 OK in 136ms (Views: 127.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:52:12 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15)) ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (119.0ms)
+Rendered projects/get_more.js.erb (121.9ms)
+Completed   in 186ms
+
+ActionView::Template::Error (private method `gsub' called for 6:Fixnum):
+    1: $("#cakes_wrapper").append("<%= escape_javascript(render("more")) %>");
+    2: 
+    3: alert("<%= escape_javascript(@limit) %>");
+    4: 
+    5: which_cakes();	  
+    6: 
+  app/views/projects/get_more.js.erb:3:in `_app_views_projects_get_more_js_erb___1714184305_2176489780_0'
+  app/controllers/projects_controller.rb:13:in `get_more'
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.5ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:52:24 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (181.1ms)
+Rendered projects/index.html.erb within layouts/application (186.9ms)
+Completed 200 OK in 201ms (Views: 192.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:52:26 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15)) ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (35.9ms)
+Rendered projects/get_more.js.erb (38.4ms)
+Completed 200 OK in 175ms (Views: 56.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:52:56 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (117.2ms)
+Rendered projects/index.html.erb within layouts/application (123.1ms)
+Completed 200 OK in 200ms (Views: 128.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:52:58 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15)) ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (102.9ms)
+Rendered projects/get_more.js.erb (105.7ms)
+Completed   in 147ms
+
+ActionView::Template::Error (private method `gsub' called for 6:Fixnum):
+    1: $("#cakes_wrapper").append("<%= escape_javascript(render("more")) %>");
+    2: 
+    3: alert("<%= escape_javascript(@limit) %>");
+    4: 
+    5: which_cakes();	  
+    6: 
+  app/views/projects/get_more.js.erb:3:in `_app_views_projects_get_more_js_erb___1714184305_2177237560_0'
+  app/controllers/projects_controller.rb:13:in `get_more'
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.9ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:53:30 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (185.7ms)
+Rendered projects/index.html.erb within layouts/application (191.7ms)
+Completed 200 OK in 205ms (Views: 197.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:53:32 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mProject Load (0.7ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15)) ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (137.6ms)
+Rendered projects/get_more.js.erb (140.4ms)
+Completed   in 182ms
+
+ActionView::Template::Error (private method `gsub' called for 6:Fixnum):
+    1: $("#cakes_wrapper").append("<%= escape_javascript(render("more")) %>");
+    2: 
+    3: alert("<%= escape_javascript(@projects.length) %>");
+    4: 
+    5: 
+    6: which_cakes();	  
+  app/views/projects/get_more.js.erb:3:in `_app_views_projects_get_more_js_erb___1714184305_2174645860_0'
+  app/controllers/projects_controller.rb:13:in `get_more'
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.3ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:54:32 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (117.5ms)
+Rendered projects/index.html.erb within layouts/application (123.3ms)
+Completed 200 OK in 205ms (Views: 128.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:54:35 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15)) ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (97.5ms)
+Rendered projects/get_more.js.erb (100.3ms)
+Completed   in 142ms
+
+ActionView::Template::Error (private method `gsub' called for 6:Fixnum):
+    1: $("#cakes_wrapper").append("<%= escape_javascript(render("more")) %>");
+    2: 
+    3: alert("<%= escape_javascript(@projects.count) %>");
+    4: 
+    5: 
+    6: which_cakes();	  
+  app/views/projects/get_more.js.erb:3:in `_app_views_projects_get_more_js_erb___1714184305_2177246300_0'
+  app/controllers/projects_controller.rb:13:in `get_more'
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.5ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:54:55 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (183.5ms)
+Rendered projects/index.html.erb within layouts/application (189.6ms)
+Completed 200 OK in 203ms (Views: 195.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:54:57 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15)) ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (135.2ms)
+Rendered projects/get_more.js.erb (137.8ms)
+Completed 200 OK in 181ms (Views: 157.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:55:11 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (182.0ms)
+Rendered projects/index.html.erb within layouts/application (187.8ms)
+Completed 200 OK in 202ms (Views: 193.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:55:13 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mProject Load (0.7ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15)) ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (36.9ms)
+Rendered projects/get_more.js.erb (39.5ms)
+Completed 200 OK in 181ms (Views: 59.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:57:03 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (116.9ms)
+Rendered projects/index.html.erb within layouts/application (122.7ms)
+Completed 200 OK in 136ms (Views: 128.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:57:06 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15)) ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (98.0ms)
+Rendered projects/get_more.js.erb (100.9ms)
+Completed   in 143ms
+
+ActionView::Template::Error (private method `gsub' called for 6:Fixnum):
+    2: 
+    3: which_cakes();	
+    4: 
+    5: if(<%= escape_javascript(@projects.length) %> < <%= escape_javascript(@limit) %>){
+    6:   alert("less");
+    7: } else {
+    8:   $('.load_more_cakes').show();
+  app/views/projects/get_more.js.erb:5:in `_app_views_projects_get_more_js_erb___1714184305_2176682240_0'
+  app/controllers/projects_controller.rb:13:in `get_more'
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.5ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:57:28 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (182.9ms)
+Rendered projects/index.html.erb within layouts/application (189.4ms)
+Completed 200 OK in 203ms (Views: 194.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:57:30 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mProject Load (0.8ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15)) ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (36.9ms)
+Rendered projects/get_more.js.erb (39.8ms)
+Completed   in 186ms
+
+ActionView::Template::Error (private method `gsub' called for 6:Fixnum):
+    2: 
+    3: which_cakes();	
+    4: 
+    5: if("<%= escape_javascript(@projects.length) %>" < "<%= escape_javascript(@limit) %>"){
+    6:   alert("less");
+    7: } else {
+    8:   $('.load_more_cakes').show();
+  app/views/projects/get_more.js.erb:5:in `_app_views_projects_get_more_js_erb___1714184305_2178383200_0'
+  app/controllers/projects_controller.rb:13:in `get_more'
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.2ms)
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:57:57 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (118.8ms)
+Rendered projects/index.html.erb within layouts/application (124.8ms)
+Completed 200 OK in 139ms (Views: 130.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:57:59 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mProject Load (0.7ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15)) ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (98.8ms)
+Rendered projects/get_more.js.erb (101.4ms)
+Completed 200 OK in 144ms (Views: 121.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:58:02 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (196.8ms)
+Rendered projects/index.html.erb within layouts/application (202.6ms)
+Completed 200 OK in 217ms (Views: 207.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:58:05 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15)) ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (136.4ms)
+Rendered projects/get_more.js.erb (139.4ms)
+Completed 200 OK in 182ms (Views: 159.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/get_more?count=12" for 127.0.0.1 at Sat Jan 28 02:58:07 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"12"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 12
+  [1m[36mProject Load (0.7ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15,14,13,12,11,10,9)) ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (26.8ms)
+Rendered projects/get_more.js.erb (28.9ms)
+Completed 200 OK in 133ms (Views: 47.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:58:42 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (188.7ms)
+Rendered projects/index.html.erb within layouts/application (194.3ms)
+Completed 200 OK in 208ms (Views: 199.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Sat Jan 28 02:58:44 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15)) ORDER BY created_at DESC LIMIT 6
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (96.5ms)
+Rendered projects/get_more.js.erb (99.2ms)
+Completed 200 OK in 271ms (Views: 118.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/get_more?count=12" for 127.0.0.1 at Sat Jan 28 02:58:45 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"12"}
+  [1m[35mProject Load (0.8ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 12
+  [1m[36mProject Load (0.8ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15,14,13,12,11,10,9)) ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (124.6ms)
+Rendered projects/get_more.js.erb (127.2ms)
+Completed 200 OK in 182ms (Views: 151.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:59:22 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 9[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered projects/_more.html.erb (195.2ms)
+Rendered projects/index.html.erb within layouts/application (201.5ms)
+Completed 200 OK in 216ms (Views: 207.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/get_more?count=9" for 127.0.0.1 at Sat Jan 28 02:59:24 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"9"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 9[0m
+  [1m[35mProject Load (1.2ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15,14,13,12)) ORDER BY created_at DESC LIMIT 9
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered projects/_more.html.erb (133.2ms)
+Rendered projects/get_more.js.erb (135.7ms)
+Completed 200 OK in 189ms (Views: 157.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Sat Jan 28 02:59:42 -0700 2012
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 28 02:59:42 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 9
+Rendered projects/_more.html.erb (100.1ms)
+Rendered projects/index.html.erb within layouts/application (106.2ms)
+Completed 200 OK in 120ms (Views: 112.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get_more?count=9" for 127.0.0.1 at Sat Jan 28 02:59:44 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"9"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 9[0m
+  [1m[35mProject Load (0.7ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (21,20,19,18,17,15,14,13,12)) ORDER BY created_at DESC LIMIT 9
+Rendered projects/_more.html.erb (7.2ms)
+Rendered projects/get_more.js.erb (10.1ms)
+Completed 200 OK in 161ms (Views: 30.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/log_in" for 127.0.0.1 at Sat Jan 28 03:00:22 -0700 2012
+
+ActionController::RoutingError (No route matches "/log_in"):
+  
+
+Rendered /Users/Ben/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at Sat Jan 28 03:00:26 -0700 2012
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)

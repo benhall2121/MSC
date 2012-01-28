@@ -1,9 +1,20 @@
 class ProjectsController < ApplicationController
-  before_filter :require_admin, :except => [:index, :show]
-  # GET /projects
-  # GET /projects.xml
+  before_filter :require_admin, :except => [:index, :show, :get_more]
+  
+  @@limit = 9
+  
+  def get_more
+    @projects_already_displayed = Project.find(:all, :select => 'id', :order => "created_at DESC", :limit => params[:count]) 
+    
+    @projects = Project.find(:all, :conditions => ['id not in (?)', @projects_already_displayed], :order => "created_at DESC", :limit => @@limit)
+  
+    @limit = @@limit
+    
+    render 'get_more.js.erb'
+  end 
+  
   def index
-    @projects = Project.find(:all, :order => "created_at DESC")
+    @projects = Project.find(:all, :order => "created_at DESC", :limit => @@limit)
 
     respond_to do |format|
       format.html # index.html.erb

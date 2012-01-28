@@ -1,0 +1,12 @@
+$("#cakes_wrapper").append("<%= escape_javascript(render("more")) %>");
+
+which_cakes();	
+
+if("<%= escape_javascript(@projects.length.to_s) %>" != "<%= escape_javascript(@limit.to_s) %>"){
+  
+} else {
+  $('.load_more_cakes').show();
+  currently_loading = false;
+}  
+
+$("#loader").hide();

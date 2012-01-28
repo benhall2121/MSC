@@ -1,10 +1,10 @@
 // Place your application-specific JavaScript functions and classes here
 // This file is automatically included by javascript_include_tag :defaults
-jQuery.ajaxSetup({ 
+jQuery.ajaxSetup({
   'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
-})
+});
 	
-var container_width, column_width, num_columns, column_array_heights = [], shortest = null, shortestIndex = 0, which = '';
+var container_width, column_width, num_columns, column_array_heights = [], shortest = null, shortestIndex = 0, which = '', incoming = '';
 
 function align_images(){
 
@@ -40,8 +40,6 @@ function refresh_view(){
     column_array_heights[rv] = 0;
   }
   
-  
-  
   align_images();
 }
 
@@ -67,6 +65,18 @@ function getParameterByName(name)
     return "";
   else
     return decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+var currently_loading = false;
+
+function add_more_cakes(){
+  if(!currently_loading){
+    $('.load_more_cakes').hide();	  
+    $("#loader").show();
+    currently_loading = true;
+    var count = $('.single_cake_wrapper').length;
+    $.get("get_more?count=" + count, null);
+  }
 }
 
 $(document).ready(function() {
@@ -146,21 +156,26 @@ $(document).ready(function() {
     refresh_view();
   });
   
-  $('.delete').click(function(){
-    asd = confirm("Are you Sure?");
-    if(asd){
-      return true;
-    }
-    
-    return false;
+  $(window).scroll(function () { 
+    if ($(window).scrollTop() > $('body').height() / 4) {
+      add_more_cakes();
+    } 
+  });
+  
+  $('.load_more_cakes').click(function(){
+    add_more_cakes();	  
   });
   
 });
 
 $(window).load(function() {
 		
-  var incoming = getParameterByName('which');
+  incoming = getParameterByName('which');
   
+  which_cakes()
+});
+
+function which_cakes(){
   if(which == '' && incoming != ''){
     which = incoming;
     
@@ -173,5 +188,5 @@ $(window).load(function() {
     }	  
   } else {			
     refresh_view();
-  }
-});
+  }	
+}
