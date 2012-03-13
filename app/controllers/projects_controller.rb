@@ -1,7 +1,7 @@
 class ProjectsController < ApplicationController
   before_filter :require_admin, :except => [:index, :show, :get_more]
   
-  @@limit = 9
+  @@limit = 2
   
   def get_more
     @projects_already_displayed = Project.find(:all, :select => 'id', :order => "created_at DESC", :limit => params[:count]) 

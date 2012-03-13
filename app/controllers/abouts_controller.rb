@@ -61,7 +61,7 @@ class AboutsController < ApplicationController
 
     respond_to do |format|
       if @about.update_attributes(params[:about])
-        format.html { redirect_to(@about, :notice => 'About was successfully updated.') }
+        format.html { redirect_to(abouts_path(), :notice => 'About was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

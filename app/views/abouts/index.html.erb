@@ -1,3 +1,5 @@
+<link href='http://fonts.googleapis.com/css?family=Mystery+Quest' rel='stylesheet' type='text/css'>
+
 <script type="text/javascript">
 
 $(document).ready(function() {
@@ -5,17 +7,20 @@ $(document).ready(function() {
 });
 
 </script>
-    
-    <div>
-      <br />
-      <h1><%= @abouts.title %></h1>       
+
+<div class="about_wrapper">
+    <div class="about_title">
+      <%= @abouts.title %>       
     </div>
-    <div><%= simple_format(@abouts.body) %></div>
+    <div class="about_body">
+      <%= simple_format(@abouts.body) %>
+    </div>
     
     <% if is_admin? %>  
       <br/>
       <%= link_to 'Edit', edit_about_path(@abouts) %>
       <%= link_to 'Delete', @abouts, :confirm => 'Are you sure?', :method => :delete %>
     <% end %>
+</div>
 
 

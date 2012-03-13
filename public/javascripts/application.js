@@ -157,7 +157,10 @@ $(document).ready(function() {
   });
   
   $(window).scroll(function () { 
-    if ($(window).scrollTop() > $('body').height() / 4) {
+    //Only load more cakes if we are on the cakes screen
+    loadMore = $('.load_more_cakes').length;
+    
+    if ($(window).scrollTop() > $('body').height() / 4 && loadMore > 0) {
       add_more_cakes();
     } 
   });

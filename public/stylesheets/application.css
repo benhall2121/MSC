@@ -14,7 +14,6 @@ border:10px solid white;
 a { 
   color: #000; 
   text-decoration: none;
-  border:none;
 }
 
 a:hover{ 
@@ -118,12 +117,12 @@ a:hover{
 
 .text_about_me{
   font-size:75px;
-  line-height:60px;
+  margin-bottom:-15px;
 }
 
 .text_about_me a:hover{
   color:#97D457;
-  cursor:pointer;	
+  cursor:pointer;
 }
 
 .green, a.green{
@@ -132,20 +131,20 @@ a:hover{
 
 .text_contact{
   font-size:27px;
-  line-height:22px;
+  margin-bottom:-2px;
 }
 
-.text_contact:hover{
+.text_contact:hover, .text_contact a:hover{
   color:#3B9F53;
   cursor:pointer;	
 }
 
 .text_order{
   font-size:36px;
-  line-height:33px;
+  margin-bottom:-3px;
 }
 
-.text_order:hover{
+.text_order:hover, .text_order a:hover{
   color:#306AC0;
   cursor:pointer;	
 }
@@ -156,7 +155,8 @@ a:hover{
 
 .text_weddings{
   font-size:165px;
-  line-height:140px;
+  margin-bottom:-50px;
+  margin-top:-20px;
 }
 
 .text_weddings:hover, .text_weddings a:hover{
@@ -174,7 +174,7 @@ a:hover{
 
 .text_occassions{
   font-size:45px;
-  line-height:43px;
+  margin-bottom:-2px;
 }
 
 .text_special_occassions:hover, .text_special_occassions a:hover{
@@ -188,7 +188,7 @@ a:hover{
 
 .text_parties{
   font-size:145px;
-  line-height:110px;
+  margin-bottom:-35px;
 }
 
 .text_parties:hover, .text_parties a:hover{
@@ -298,4 +298,24 @@ a:hover{
 /*****  End Messages  *****/
 
 
+
+
+/*****  About  *****/
+
+.about_wrapper{
+}
+
+.about_title{
+  font-size:60px;
+  margin-top:20px;
+  text-align:center;
+  font-family: 'Mystery Quest', cursive;
+  color:#3D2917;
+}
+
+.about_body{
+  color:#3D2917;
+}
+
+/*****  End About  *****/
 
