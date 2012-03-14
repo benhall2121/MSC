@@ -1,8 +1,14 @@
 class ContactMailer < ActionMailer::Base
+  include ApplicationHelper
   default :from => "Website@benerino.com"
   
   def contact_email(sent_email)
     @sent_email = sent_email
-    mail(:to => "benhall2121@yahoo.com", :subject => "A new message from: #{sent_email.name}")
+    mail(:to => emailAddress, :subject => "A new Message from: #{sent_email.name}")
+  end
+  
+  def order_email(sent_email)
+    @sent_email = sent_email
+    mail(:to => emailAddress, :subject => "A new Order from: #{sent_email.name}")
   end
 end

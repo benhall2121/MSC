@@ -5,6 +5,7 @@
       <%= hidden_field project.wedding, 'wedding', :class => 'wedding' if project.wedding %>
       <%= hidden_field project.special, 'special', :class => 'special' if project.special %>
       <%= hidden_field project.parties, 'parties', :class => 'parties' if project.parties %>
+      <%= hidden_field project.parties, 'none', :class => 'none' if !project.wedding && !project.special && !project.parties  %>
    
     <% if is_admin? %>
       <%= link_to 'Edit', edit_project_path(project) %>

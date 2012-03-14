@@ -266,12 +266,14 @@ a:hover{
   text-align:center;
   font-size:12px;
   font-family: Tahoma, sans-serif;
-  color: #ccc
 }
 
 .message_header{
  font-size:15px;	
- margin:10px 0 10px 0;
+}
+
+.messages_title{
+  font-size:40px;	
 }
 
 .other_textfield{
@@ -284,15 +286,25 @@ a:hover{
  width: 430px;	
 }
 
-#new_message_div  textarea{
-        width: 500px;
-        height: 120px;
-        border: 3px solid #cccccc;
-        padding: 5px;
+table.contact_table{
+  margin:0 auto;
+}
+table.contact_table td{
+  padding-right:5px;	
 }
 
-.message_textarea{
- resize:none;	
+table.contact_table input, table.contact_table textarea{
+ border: 1px solid #cccccc;
+ width:100%;
+}
+
+table.contact_table select{
+ width:100%;
+}
+
+table.contact_table  textarea{
+  height: 120px;
+  resize:none;
 }
 
 /*****  End Messages  *****/

@@ -1,3 +1,39 @@
+<style type="text/css">
+
+html{
+  height:100%;
+  background: #3B9F53; 
+  color:white;
+  overflow: hidden;
+}
+
+body {	
+  color:white;
+  border:none;
+  height:100%;
+}
+
+</style>
+
+
+<% if @message.message_type == 'order' %>
+
+<style type="text/css">
+html{
+  background: #306AC0; 
+}
+</style>
+
+<% else %>
+
+<style type="text/css">
+html{
+  background: #3B9F53; 
+}
+</style>
+
+<% end %>
+
 <div id="new_message_div">
 <%= render 'form' %>
 

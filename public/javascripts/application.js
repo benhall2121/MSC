@@ -80,6 +80,8 @@ function add_more_cakes(){
 }
 
 $(document).ready(function() {
+		
+  $('.date_picker_field').datepicker();
 
   container_width = $('.cakes_wrapper').width() - parseInt($('.cakes_wrapper').css("padding-right")) - parseInt($('.cakes_wrapper').css("padding-right"));
   column_width = $('.single_cake_wrapper').width() + parseInt($('.single_cake_wrapper').css("padding-right")) + parseInt($('.single_cake_wrapper').css("padding-right")) + parseInt($('.single_cake_wrapper').css("margin-right")) + parseInt($('.single_cake_wrapper').css("margin-left"));
@@ -104,6 +106,26 @@ $(document).ready(function() {
 	'titleShow'		: 'true'
   });
   
+  $(".contact").fancybox({
+	'width'				: '75%',
+	'height'			: 375,
+	'autoScale'			: false,
+	'transitionIn'		: 'elastic',
+	'transitionOut'		: 'elastic',
+	'type'				: 'iframe',
+	'centerOnScroll'	: 'true'
+  });
+  
+  $(".order").fancybox({
+	'width'				: '75%',
+	'height'			: 450,
+	'autoScale'			: false,
+	'transitionIn'		: 'elastic',
+	'transitionOut'		: 'elastic',
+	'type'				: 'iframe',
+	'centerOnScroll'	: 'true'
+  });
+  
   $('#new_message').live('submit', function(){
       //$.post(this.action, $(this).serialize(), null, function(response) { parent.$.fancybox.close(); });
       //$.fancybox.close();  
@@ -113,8 +135,10 @@ $(document).ready(function() {
   });
   
   $('.text_parties').click(function(){
+    incoming = 'parties';
     reset_view();
     
+    $('.none').parent().hide();
     $('.wedding').parent().hide();
     $('.special').parent().hide();
     
@@ -126,8 +150,10 @@ $(document).ready(function() {
   });
   
   $('.text_weddings').click(function(){
+    incoming = 'wedding';
     reset_view();
     
+    $('.none').parent().hide();
     $('.parties').parent().hide();
     $('.special').parent().hide();
     
@@ -139,8 +165,10 @@ $(document).ready(function() {
   });
   
   $('.text_special_occassions').click(function(){
+    incoming = 'special';
     reset_view();
     
+    $('.none').parent().hide();
     $('.wedding').parent().hide();
     $('.parties').parent().hide();
     
@@ -152,6 +180,7 @@ $(document).ready(function() {
   });
   
   $('.logo').click(function(){
+    incoming = '';
     reset_view();
     refresh_view();
   });
@@ -179,6 +208,7 @@ $(window).load(function() {
 });
 
 function which_cakes(){
+	
   if(which == '' && incoming != ''){
     which = incoming;
     
