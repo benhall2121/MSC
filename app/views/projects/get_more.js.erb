@@ -1,6 +1,6 @@
 $("#cakes_wrapper").append("<%= escape_javascript(render("more")) %>");
-refresh_view();
-which_cakes();	
+hide_not_used_cakes();
+refresh_view();	
 
 if("<%= escape_javascript(@projects.length.to_s) %>" != "<%= escape_javascript(@limit.to_s) %>"){
   

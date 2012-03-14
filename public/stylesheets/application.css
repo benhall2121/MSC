@@ -273,7 +273,8 @@ a:hover{
 }
 
 .messages_title{
-  font-size:40px;	
+  font-size:40px;
+  font-family: 'Mystery Quest', cursive;
 }
 
 .other_textfield{
@@ -315,6 +316,8 @@ table.contact_table  textarea{
 /*****  About  *****/
 
 .about_wrapper{
+  padding: 0 10px 10px 10px;
+  border: 1px dashed #fff;
 }
 
 .about_title{

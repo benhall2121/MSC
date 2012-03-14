@@ -94,8 +94,10 @@ $(document).ready(function() {
   // Find the shortest column.
   shortest = null;
   shortestIndex = 0;		
-	
-  $(".pop").attr('rel', 'gallery').fancybox({
+
+  
+  $("a.pop").live("mouseover focus", function() {
+    $("a.pop").fancybox( {
 	'width'				: '75%',
 	'height'			: '100%',
 	'autoScale'			: false,
@@ -104,6 +106,7 @@ $(document).ready(function() {
 	'centerOnScroll'	: 'true',
 	'cyclic'		: 'true',
 	'titleShow'		: 'true'
+    });
   });
   
   $(".contact").fancybox({
@@ -210,16 +213,21 @@ $(window).load(function() {
 function which_cakes(){
 	
   if(which == '' && incoming != ''){
-    which = incoming;
     
-    if(incoming == 'wedding'){
+    which = incoming;
+    hide_not_used_cakes();  
+    
+  } else {			
+    refresh_view();
+  }	
+}
+
+function hide_not_used_cakes(){
+  if(incoming == 'wedding'){
       $('.text_weddings').trigger("click");
     } else if(incoming == 'parties') {
       $('.text_parties').trigger("click");
     } else if(incoming == 'special') {
       $('.text_special_occassions').trigger("click");
-    }	  
-  } else {			
-    refresh_view();
-  }	
+   }		
 }

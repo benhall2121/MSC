@@ -1,7 +1,9 @@
+<link href='http://fonts.googleapis.com/css?family=Mystery+Quest' rel='stylesheet' type='text/css'>
+
 <% if @message.message_type == 'order' %>
 
 <div class="message_header">
-  <span class="messages_title">Order Info</span> <br/>
+  <span class="messages_title">Order Form</span> <br/>
   Email: <%= emailAddress %> <br/>
   Phone: <%= phoneNumber %> <br/>
   or fill out the form below
@@ -10,7 +12,7 @@
 <% else %>
 
 <div class="message_header">
-  <span class="messages_title">Contact Info</span> <br/>
+  <span class="messages_title">Contact Me</span> <br/>
   Email: <%= emailAddress %> <br/>
   Phone: <%= phoneNumber %> <br/>
   or fill out the form below
