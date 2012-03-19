@@ -43,7 +43,7 @@
       <td colspan="3"><%= f.text_field :flavor, :class => 'name_textfield' %></td>
     </tr>
     <tr>
-      <td>Design</td>
+      <td>Guest Count</td>
       <td><%= f.text_field :design, :class => 'other_textfield' %></td>
       <td>Delivery Type</td>
       <td><%= f.select :delievery_type, [['Delivery'],['Pickup']] %></td>
@@ -72,6 +72,12 @@
   <% end %>
   
   </table>
+  
+  <% if @message.message_type == 'order' %>
+  <div style="width:75%;margin:5px auto 10px auto;">
+    I offer all types of cakes in a price range that is sure to fit your budget and impress your guests. Cakes are priced per person starting at $2.50 per slice. Cheesecake and Fondant covered cakes start at $3.50 per slice (gumpaste flowers, pearls and bows are priced separately).
+  </div>
+  <% end %>
   
   
   <div class="actions">

@@ -121,7 +121,7 @@ $(document).ready(function() {
   
   $(".order").fancybox({
 	'width'				: '75%',
-	'height'			: 450,
+	'height'			: 500,
 	'autoScale'			: false,
 	'transitionIn'		: 'elastic',
 	'transitionOut'		: 'elastic',
