@@ -15,6 +15,7 @@
   <span class="messages_title">Contact Me</span> <br/>
   Email: <%= emailAddress %> <br/>
   Phone: <%= phoneNumber %> <br/>
+  <%= link_to image_tag("facebook_icon.png", :style => "vertical-align:middle;margin:0px;"), "https://www.facebook.com/pages/Michelles-Sweet-Cakes/106051959436151", :class => 'contact_link', :target => "blank" %><br />
   or fill out the form below
 </div>
 
@@ -74,8 +75,8 @@
   </table>
   
   <% if @message.message_type == 'order' %>
-  <div style="width:75%;margin:5px auto 10px auto;">
-    I offer all types of cakes in a price range that is sure to fit your budget and impress your guests. Cakes are priced per person starting at $2.50 per slice. Cheesecake and Fondant covered cakes start at $3.50 per slice (gumpaste flowers, pearls and bows are priced separately).
+  <div class="message_div">
+    Cakes are priced per person and start at $4 per serving.
   </div>
   <% end %>
   
@@ -83,5 +84,43 @@
   <div class="actions">
     <%= f.submit 'Send', :id => 'new_message_submit_id' %>
   </div>
+  
+  <% if @message.message_type == 'order' %>
+  <div class="message_div" style="text-align:left; padding:10px 0;">
+    <div>
+      All my cakes are baked fresh, and never frozen. They get frosted in italian meringue buttercream and then covered in a thin layer of fondant.You may chose any shape or size for your cake (i.e.; round, square, multiple layers). My 3-D cakes are priced by quote only. Below is a list of flavors to choose from. But, if you don't see your favorite flavor, feel free to <%= link_to "contact me", new_message_path(:message_type => "email"), :class => 'contact_link' %> with any custom flavor ideas you have.
+    </div>
+    
+    
+    <div class="flavor_filling_wrapper">
+      <div class="desc_title">
+        Cake Flavors
+      </div>
+    
+      <div>
+        White almond sour cream (wedding favorite), French vanilla, Chocolate, Strawberry, Red Velvet
+      </div>
+    </div>
+    
+    <div class="flavor_filling_wrapper">
+      <div class="desc_title">
+        Fillings
+      </div>
+    
+      <div>
+        Buttercream, Whipped cream, Bavarian cream, Cream Cheese, White chocolate cream cheese, Chocolate cream cheese, Lemon cream, Raspberry mousse, Chocolate mousse, White chocolate mousse, Cream cheese mousse, Peanut butter mousse, Whipped cream and fresh berries
+      </div>
+    </div>
+    
+    
+    
+    <div style="margin:5px 0;text-align:center;">
+      White chocolate flowers, bows, ribbons and strands of pearls are priced seperatly.
+    </div>
+    
+  </div>
+  <% end %>
+  
+  
 <% end %>
 

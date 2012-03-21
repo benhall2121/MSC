@@ -1,6 +1,6 @@
 $("#cakes_wrapper").append("<%= escape_javascript(render("more")) %>");
 hide_not_used_cakes();
-refresh_view();	
+
 
 if("<%= escape_javascript(@projects.length.to_s) %>" != "<%= escape_javascript(@limit.to_s) %>"){
   
@@ -8,5 +8,10 @@ if("<%= escape_javascript(@projects.length.to_s) %>" != "<%= escape_javascript(@
   $('.load_more_cakes').show();
   currently_loading = false;
 }  
+
+$('img.single_photo').load(function(){
+    refresh_view();	  
+  });
+
 
 $("#loader").hide();

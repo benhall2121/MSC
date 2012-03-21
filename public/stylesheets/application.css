@@ -308,6 +308,29 @@ table.contact_table  textarea{
   resize:none;
 }
 
+.message_div{
+  width:75%;
+  margin:5px auto 10px auto;	
+}
+
+.flavor_filling_wrapper{
+  margin: 10px 0;	
+}
+
+.desc_title{
+  margin-top:5px;
+  font-weight:bold;
+  font-size:14px;
+}
+
+a.contact_link{
+  color:#FFF;
+}
+
+a.contact_link:hover{
+  color:gray;	
+}
+
 /*****  End Messages  *****/
 
 

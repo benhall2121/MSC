@@ -111,7 +111,7 @@ $(document).ready(function() {
   
   $(".contact").fancybox({
 	'width'				: '75%',
-	'height'			: 375,
+	'height'			: 400,
 	'autoScale'			: false,
 	'transitionIn'		: 'elastic',
 	'transitionOut'		: 'elastic',
@@ -121,8 +121,9 @@ $(document).ready(function() {
   
   $(".order").fancybox({
 	'width'				: '75%',
-	'height'			: 500,
-	'autoScale'			: false,
+	'height'			: '100%',
+	'autoScale'			: true,
+	'scrolling'   			: 'auto',
 	'transitionIn'		: 'elastic',
 	'transitionOut'		: 'elastic',
 	'type'				: 'iframe',
@@ -200,6 +201,7 @@ $(document).ready(function() {
   $('.load_more_cakes').click(function(){
     add_more_cakes();	  
   });
+  
   
 });
 
