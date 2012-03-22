@@ -129,13 +129,20 @@ a:hover{
   color:#97D457;
 }
 
+.text_about_me{	
+}
+
+.contact_order_wrapper{
+  margin-left:2px;
+}
+
 .text_contact{
   font-size:27px;
   margin-bottom:-2px;
 }
 
 .text_contact:hover, .text_contact a:hover{
-  color:#3B9F53;
+  color:#42B35D;
   cursor:pointer;	
 }
 
@@ -145,7 +152,7 @@ a:hover{
 }
 
 .text_order:hover, .text_order a:hover{
-  color:#306AC0;
+  color:#3378DE;
   cursor:pointer;	
 }
 
@@ -157,6 +164,7 @@ a:hover{
   font-size:165px;
   margin-bottom:-50px;
   margin-top:-20px;
+  padding:0;
 }
 
 .text_weddings:hover, .text_weddings a:hover{
@@ -165,7 +173,7 @@ a:hover{
 }
 
 .text_special{
-  font-size:63px;
+  font-size:68px;
 }
 
 .teal{
@@ -173,7 +181,7 @@ a:hover{
 }
 
 .text_occassions{
-  font-size:45px;
+  font-size:48px;
   margin-bottom:-2px;
 }
 
@@ -189,6 +197,7 @@ a:hover{
 .text_parties{
   font-size:145px;
   margin-bottom:-35px;
+  margin-left:-10px;
 }
 
 .text_parties:hover, .text_parties a:hover{
@@ -211,7 +220,7 @@ a:hover{
 
 .cake_title{
   font-weight:bold;
-  font-size: 12px; 	
+  font-size: 15px; 	
 }
 
 .single_cake_wrapper{
@@ -221,7 +230,7 @@ a:hover{
   width: 270px; 
   padding: 10px; 
   margin: 5px 5px;
-  font-size: 11px; 
+  font-size: 14px; 
   
 }
 
@@ -234,12 +243,13 @@ a:hover{
   color:#888;
 }
 
-.load_more_cakes{
+.load_more_cakes, .cakes_loader{
   width:50%;
   margin:10px auto;
-  border: 1px solid #888;
+  border: 1px dashed #FFF;
   padding:5px;
-  background-color:#e7e3e3;
+  font-size:18px;
+  background-color:none;
   text-shadow: 0.1em 0.1em #bbb;
   
   -moz-border-radius: 4px;
@@ -250,8 +260,8 @@ a:hover{
 
 
 .load_more_cakes:hover{
-  border: 1px solid #444;
-  color:#444;
+  border: 1px dashed #9C734E;
+  color:#9C734E;
   cursor:pointer;
 }
 

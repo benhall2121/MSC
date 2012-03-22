@@ -21768,3 +21768,1257 @@ Started GET "/messages/new?message_type=order" for 127.0.0.1 at Wed Mar 21 12:06
 Rendered messages/_form.html.erb (5.1ms)
 Rendered messages/new.html.erb within layouts/application (10.2ms)
 Completed 200 OK in 38ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:38:36 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (46.9ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (150.9ms)
+Rendered projects/index.html.erb within layouts/application (195.0ms)
+Completed 200 OK in 376ms (Views: 221.2ms | ActiveRecord: 46.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:40:02 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (113.1ms)
+Rendered projects/index.html.erb within layouts/application (120.3ms)
+Completed 200 OK in 137ms (Views: 127.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:40:28 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (93.0ms)
+Rendered projects/index.html.erb within layouts/application (99.6ms)
+Completed 200 OK in 113ms (Views: 105.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:41:16 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (115.7ms)
+Rendered projects/index.html.erb within layouts/application (122.4ms)
+Completed 200 OK in 137ms (Views: 128.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:42:11 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (98.2ms)
+Rendered projects/index.html.erb within layouts/application (105.2ms)
+Completed 200 OK in 119ms (Views: 111.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:42:55 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.8ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (113.3ms)
+Rendered projects/index.html.erb within layouts/application (120.1ms)
+Completed 200 OK in 135ms (Views: 126.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:43:15 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (97.9ms)
+Rendered projects/index.html.erb within layouts/application (104.5ms)
+Completed 200 OK in 119ms (Views: 110.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:43:31 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (114.5ms)
+Rendered projects/index.html.erb within layouts/application (120.8ms)
+Completed 200 OK in 135ms (Views: 126.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:44:16 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (91.3ms)
+Rendered projects/index.html.erb within layouts/application (97.6ms)
+Completed 200 OK in 111ms (Views: 103.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:44:45 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (120.1ms)
+Rendered projects/index.html.erb within layouts/application (130.8ms)
+Completed 200 OK in 144ms (Views: 136.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:45:07 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (89.9ms)
+Rendered projects/index.html.erb within layouts/application (96.3ms)
+Completed 200 OK in 110ms (Views: 101.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:45:23 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (116.1ms)
+Rendered projects/index.html.erb within layouts/application (122.7ms)
+Completed 200 OK in 136ms (Views: 128.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:46:08 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (90.6ms)
+Rendered projects/index.html.erb within layouts/application (97.2ms)
+Completed 200 OK in 111ms (Views: 102.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:46:24 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (122.8ms)
+Rendered projects/index.html.erb within layouts/application (129.7ms)
+Completed 200 OK in 144ms (Views: 135.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:46:36 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (92.4ms)
+Rendered projects/index.html.erb within layouts/application (99.4ms)
+Completed 200 OK in 199ms (Views: 105.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:46:55 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (117.2ms)
+Rendered projects/index.html.erb within layouts/application (124.3ms)
+Completed 200 OK in 138ms (Views: 130.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:47:16 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (32.7ms)
+Rendered projects/index.html.erb within layouts/application (97.6ms)
+Completed 200 OK in 194ms (Views: 103.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:47:30 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (109.9ms)
+Rendered projects/index.html.erb within layouts/application (116.4ms)
+Completed 200 OK in 132ms (Views: 122.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:47:44 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (111.5ms)
+Rendered projects/index.html.erb within layouts/application (118.1ms)
+Completed 200 OK in 132ms (Views: 123.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:48:29 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (94.1ms)
+Rendered projects/index.html.erb within layouts/application (101.2ms)
+Completed 200 OK in 117ms (Views: 107.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:48:39 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (118.8ms)
+Rendered projects/index.html.erb within layouts/application (126.6ms)
+Completed 200 OK in 140ms (Views: 132.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:48:59 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (3.1ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (160.1ms)
+Rendered projects/index.html.erb within layouts/application (167.5ms)
+Completed 200 OK in 193ms (Views: 178.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:49:18 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (1.6ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (115.3ms)
+Rendered projects/index.html.erb within layouts/application (121.9ms)
+Completed 200 OK in 138ms (Views: 127.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:50:10 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (92.9ms)
+Rendered projects/index.html.erb within layouts/application (99.6ms)
+Completed 200 OK in 114ms (Views: 105.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:50:33 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (121.9ms)
+Rendered projects/index.html.erb within layouts/application (128.8ms)
+Completed 200 OK in 142ms (Views: 134.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:50:55 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (92.4ms)
+Rendered projects/index.html.erb within layouts/application (99.0ms)
+Completed 200 OK in 114ms (Views: 104.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:51:12 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (110.8ms)
+Rendered projects/index.html.erb within layouts/application (117.2ms)
+Completed 200 OK in 131ms (Views: 122.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:51:36 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (111.6ms)
+Rendered projects/index.html.erb within layouts/application (118.1ms)
+Completed 200 OK in 132ms (Views: 123.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:51:56 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (111.6ms)
+Rendered projects/index.html.erb within layouts/application (118.0ms)
+Completed 200 OK in 131ms (Views: 123.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:52:09 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (89.0ms)
+Rendered projects/index.html.erb within layouts/application (95.5ms)
+Completed 200 OK in 109ms (Views: 101.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:52:31 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (118.9ms)
+Rendered projects/index.html.erb within layouts/application (126.1ms)
+Completed 200 OK in 140ms (Views: 131.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get_more?count=11" for 127.0.0.1 at Thu Mar 22 11:52:32 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"11"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 11
+  [1m[36mProject Load (1.1ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12,11)) ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (51.2ms)
+Rendered projects/get_more.js.erb (54.0ms)
+Completed 200 OK in 272ms (Views: 121.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:52:39 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (102.4ms)
+Rendered projects/index.html.erb within layouts/application (108.8ms)
+Completed 200 OK in 123ms (Views: 114.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get_more?count=11" for 127.0.0.1 at Thu Mar 22 11:52:42 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"11"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+  [1m[35mProject Load (0.7ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12,11)) ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (4.3ms)
+Rendered projects/get_more.js.erb (6.4ms)
+Completed 200 OK in 47ms (Views: 25.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at Thu Mar 22 11:52:46 -0700 2012
+  Processing by AboutsController#index as HTML
+  [1m[36mAbout Load (55.9ms)[0m  [1mSELECT `abouts`.* FROM `abouts` ORDER BY created_at DESC LIMIT 1[0m
+Rendered abouts/index.html.erb within layouts/application (40.5ms)
+Completed 200 OK in 139ms (Views: 59.9ms | ActiveRecord: 55.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:54:15 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.7ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (95.1ms)
+Rendered projects/index.html.erb within layouts/application (101.7ms)
+Completed 200 OK in 116ms (Views: 107.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/get_more?count=11" for 127.0.0.1 at Thu Mar 22 11:54:17 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"11"}
+  [1m[36mProject Load (4.7ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+  [1m[35mProject Load (0.7ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12,11)) ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (8.5ms)
+Rendered projects/get_more.js.erb (12.5ms)
+Completed 200 OK in 74ms (Views: 36.7ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:54:44 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (90.1ms)
+Rendered projects/index.html.erb within layouts/application (96.8ms)
+Completed 200 OK in 198ms (Views: 102.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:54:49 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (180.2ms)
+Rendered projects/index.html.erb within layouts/application (186.8ms)
+Completed 200 OK in 200ms (Views: 192.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:55:07 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (34.1ms)
+Rendered projects/index.html.erb within layouts/application (98.7ms)
+Completed 200 OK in 192ms (Views: 104.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:55:39 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (138.1ms)
+Rendered projects/index.html.erb within layouts/application (145.7ms)
+Completed 200 OK in 162ms (Views: 153.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get_more?count=11" for 127.0.0.1 at Thu Mar 22 11:55:43 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"11"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+  [1m[35mProject Load (0.7ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12,11)) ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (4.2ms)
+Rendered projects/get_more.js.erb (6.3ms)
+Completed 200 OK in 133ms (Views: 24.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:55:59 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (91.8ms)
+Rendered projects/index.html.erb within layouts/application (98.4ms)
+Completed 200 OK in 112ms (Views: 103.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 11:56:08 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (118.4ms)
+Rendered projects/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 140ms (Views: 130.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get_more?count=11" for 127.0.0.1 at Thu Mar 22 11:57:40 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"11"}
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+  [1m[35mProject Load (0.7ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12,11)) ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (4.2ms)
+Rendered projects/get_more.js.erb (6.3ms)
+Completed 200 OK in 52ms (Views: 25.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:01:36 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (122.4ms)
+Rendered projects/index.html.erb within layouts/application (128.8ms)
+Completed 200 OK in 168ms (Views: 160.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:02:23 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (92.2ms)
+Rendered projects/index.html.erb within layouts/application (98.7ms)
+Completed 200 OK in 113ms (Views: 104.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:03:04 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (114.6ms)
+Rendered projects/index.html.erb within layouts/application (121.0ms)
+Completed 200 OK in 135ms (Views: 126.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:03:30 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (91.6ms)
+Rendered projects/index.html.erb within layouts/application (97.9ms)
+Completed 200 OK in 112ms (Views: 103.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:04:08 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (112.5ms)
+Rendered projects/index.html.erb within layouts/application (118.9ms)
+Completed 200 OK in 133ms (Views: 124.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:04:26 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (92.8ms)
+Rendered projects/index.html.erb within layouts/application (99.6ms)
+Completed 200 OK in 114ms (Views: 105.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:05:13 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (112.1ms)
+Rendered projects/index.html.erb within layouts/application (118.5ms)
+Completed 200 OK in 132ms (Views: 124.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:05:46 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (90.8ms)
+Rendered projects/index.html.erb within layouts/application (97.2ms)
+Completed 200 OK in 112ms (Views: 102.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:06:07 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (110.6ms)
+Rendered projects/index.html.erb within layouts/application (118.2ms)
+Completed 200 OK in 132ms (Views: 123.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:06:18 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (106.0ms)
+Rendered projects/index.html.erb within layouts/application (113.9ms)
+Completed 200 OK in 129ms (Views: 119.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:06:29 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (110.6ms)
+Rendered projects/index.html.erb within layouts/application (117.2ms)
+Completed 200 OK in 131ms (Views: 122.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:06:59 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (92.1ms)
+Rendered projects/index.html.erb within layouts/application (98.7ms)
+Completed 200 OK in 113ms (Views: 104.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:07:09 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (111.5ms)
+Rendered projects/index.html.erb within layouts/application (118.0ms)
+Completed 200 OK in 132ms (Views: 123.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:07:36 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (32.6ms)
+Rendered projects/index.html.erb within layouts/application (96.7ms)
+Completed 200 OK in 187ms (Views: 102.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:07:55 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (108.3ms)
+Rendered projects/index.html.erb within layouts/application (115.3ms)
+Completed 200 OK in 129ms (Views: 121.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:08:35 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (32.7ms)
+Rendered projects/index.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 132ms (Views: 123.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:09:04 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (91.9ms)
+Rendered projects/index.html.erb within layouts/application (98.4ms)
+Completed 200 OK in 112ms (Views: 103.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:09:21 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (111.6ms)
+Rendered projects/index.html.erb within layouts/application (118.3ms)
+Completed 200 OK in 132ms (Views: 124.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:09:37 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (91.2ms)
+Rendered projects/index.html.erb within layouts/application (97.6ms)
+Completed 200 OK in 112ms (Views: 103.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:09:45 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (102.1ms)
+Rendered projects/index.html.erb within layouts/application (109.1ms)
+Completed 200 OK in 123ms (Views: 115.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:10:22 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (93.5ms)
+Rendered projects/index.html.erb within layouts/application (100.6ms)
+Completed 200 OK in 115ms (Views: 106.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:10:36 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (113.5ms)
+Rendered projects/index.html.erb within layouts/application (119.9ms)
+Completed 200 OK in 134ms (Views: 125.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:10:50 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (91.1ms)
+Rendered projects/index.html.erb within layouts/application (97.4ms)
+Completed 200 OK in 111ms (Views: 102.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:11:00 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (112.2ms)
+Rendered projects/index.html.erb within layouts/application (120.4ms)
+Completed 200 OK in 134ms (Views: 126.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:11:29 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (90.9ms)
+Rendered projects/index.html.erb within layouts/application (97.4ms)
+Completed 200 OK in 112ms (Views: 103.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:11:58 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (117.5ms)
+Rendered projects/index.html.erb within layouts/application (123.8ms)
+Completed 200 OK in 138ms (Views: 129.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/messages/new?message_type=order" for 127.0.0.1 at Thu Mar 22 12:13:07 -0700 2012
+  Processing by MessagesController#new as HTML
+  Parameters: {"message_type"=>"order"}
+Rendered messages/_form.html.erb (7.5ms)
+Rendered messages/new.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 183ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new?message_type=email" for 127.0.0.1 at Thu Mar 22 12:13:13 -0700 2012
+  Processing by MessagesController#new as HTML
+  Parameters: {"message_type"=>"email"}
+Rendered messages/_form.html.erb (70.5ms)
+Rendered messages/new.html.erb within layouts/application (75.9ms)
+Completed 200 OK in 102ms (Views: 81.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:14:12 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (101.0ms)
+Rendered projects/index.html.erb within layouts/application (107.4ms)
+Completed 200 OK in 121ms (Views: 112.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/messages/new?message_type=email" for 127.0.0.1 at Thu Mar 22 12:14:14 -0700 2012
+  Processing by MessagesController#new as HTML
+  Parameters: {"message_type"=>"email"}
+Rendered messages/_form.html.erb (3.6ms)
+Rendered messages/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 204ms (Views: 91.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:14:26 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.8ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (102.7ms)
+Rendered projects/index.html.erb within layouts/application (109.6ms)
+Completed 200 OK in 125ms (Views: 115.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/messages/new?message_type=email" for 127.0.0.1 at Thu Mar 22 12:14:28 -0700 2012
+  Processing by MessagesController#new as HTML
+  Parameters: {"message_type"=>"email"}
+Rendered messages/_form.html.erb (3.6ms)
+Rendered messages/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 110ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:14:39 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (98.2ms)
+Rendered projects/index.html.erb within layouts/application (106.0ms)
+Completed 200 OK in 120ms (Views: 111.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/messages/new?message_type=email" for 127.0.0.1 at Thu Mar 22 12:14:41 -0700 2012
+  Processing by MessagesController#new as HTML
+  Parameters: {"message_type"=>"email"}
+Rendered messages/_form.html.erb (3.6ms)
+Rendered messages/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 113ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new?message_type=order" for 127.0.0.1 at Thu Mar 22 12:14:47 -0700 2012
+  Processing by MessagesController#new as HTML
+  Parameters: {"message_type"=>"order"}
+Rendered messages/_form.html.erb (4.4ms)
+Rendered messages/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 32ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new?message_type=email" for 127.0.0.1 at Thu Mar 22 12:14:52 -0700 2012
+  Processing by MessagesController#new as HTML
+  Parameters: {"message_type"=>"email"}
+Rendered messages/_form.html.erb (4.5ms)
+Rendered messages/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 128ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new?message_type=order" for 127.0.0.1 at Thu Mar 22 12:15:14 -0700 2012
+  Processing by MessagesController#new as HTML
+  Parameters: {"message_type"=>"order"}
+Rendered messages/_form.html.erb (4.5ms)
+Rendered messages/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 36ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new?message_type=email" for 127.0.0.1 at Thu Mar 22 12:15:16 -0700 2012
+  Processing by MessagesController#new as HTML
+  Parameters: {"message_type"=>"email"}
+Rendered messages/_form.html.erb (3.6ms)
+Rendered messages/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 31ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:15:28 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (102.0ms)
+Rendered projects/index.html.erb within layouts/application (108.6ms)
+Completed 200 OK in 123ms (Views: 114.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/messages/new?message_type=email" for 127.0.0.1 at Thu Mar 22 12:15:30 -0700 2012
+  Processing by MessagesController#new as HTML
+  Parameters: {"message_type"=>"email"}
+Rendered messages/_form.html.erb (3.7ms)
+Rendered messages/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 33ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new?message_type=order" for 127.0.0.1 at Thu Mar 22 12:15:34 -0700 2012
+  Processing by MessagesController#new as HTML
+  Parameters: {"message_type"=>"order"}
+Rendered messages/_form.html.erb (4.6ms)
+Rendered messages/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 98ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get_more?count=11" for 127.0.0.1 at Thu Mar 22 12:15:38 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"11"}
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+  [1m[35mProject Load (1.0ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12,11)) ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (5.6ms)
+Rendered projects/get_more.js.erb (9.1ms)
+Completed 200 OK in 74ms (Views: 40.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/messages/new?message_type=order" for 127.0.0.1 at Thu Mar 22 12:15:41 -0700 2012
+  Processing by MessagesController#new as HTML
+  Parameters: {"message_type"=>"order"}
+Rendered messages/_form.html.erb (4.6ms)
+Rendered messages/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 110ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new?message_type=email" for 127.0.0.1 at Thu Mar 22 12:15:54 -0700 2012
+  Processing by MessagesController#new as HTML
+  Parameters: {"message_type"=>"email"}
+Rendered messages/_form.html.erb (3.4ms)
+Rendered messages/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 31ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:17:22 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (142.0ms)
+Rendered projects/index.html.erb within layouts/application (148.5ms)
+Completed 200 OK in 164ms (Views: 155.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/messages/new?message_type=email" for 127.0.0.1 at Thu Mar 22 12:17:25 -0700 2012
+  Processing by MessagesController#new as HTML
+  Parameters: {"message_type"=>"email"}
+Rendered messages/_form.html.erb (3.5ms)
+Rendered messages/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 34ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:17:37 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (89.6ms)
+Rendered projects/index.html.erb within layouts/application (96.6ms)
+Completed 200 OK in 111ms (Views: 102.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/messages/new?message_type=email" for 127.0.0.1 at Thu Mar 22 12:17:39 -0700 2012
+  Processing by MessagesController#new as HTML
+  Parameters: {"message_type"=>"email"}
+Rendered messages/_form.html.erb (3.4ms)
+Rendered messages/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 117ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:18:17 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (94.5ms)
+Rendered projects/index.html.erb within layouts/application (100.9ms)
+Completed 200 OK in 115ms (Views: 106.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/messages/new?message_type=order" for 127.0.0.1 at Thu Mar 22 12:18:25 -0700 2012
+  Processing by MessagesController#new as HTML
+  Parameters: {"message_type"=>"order"}
+Rendered messages/_form.html.erb (4.3ms)
+Rendered messages/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 36ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:18:53 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (94.3ms)
+Rendered projects/index.html.erb within layouts/application (100.8ms)
+Completed 200 OK in 115ms (Views: 106.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/messages/new?message_type=order" for 127.0.0.1 at Thu Mar 22 12:18:56 -0700 2012
+  Processing by MessagesController#new as HTML
+  Parameters: {"message_type"=>"order"}
+Rendered messages/_form.html.erb (102.9ms)
+Rendered messages/new.html.erb within layouts/application (111.4ms)
+Completed 200 OK in 135ms (Views: 117.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/get_more?count=11" for 127.0.0.1 at Thu Mar 22 12:19:02 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"11"}
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+  [1m[35mProject Load (2.1ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12,11)) ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (4.3ms)
+Rendered projects/get_more.js.erb (8.4ms)
+Completed 200 OK in 60ms (Views: 30.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:21:11 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (102.9ms)
+Rendered projects/index.html.erb within layouts/application (109.3ms)
+Completed 200 OK in 123ms (Views: 114.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get_more?count=11" for 127.0.0.1 at Thu Mar 22 12:21:14 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"11"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 11
+  [1m[36mProject Load (0.7ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12,11)) ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (6.3ms)
+Rendered projects/get_more.js.erb (8.9ms)
+Completed 200 OK in 66ms (Views: 33.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:21:20 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (97.2ms)
+Rendered projects/index.html.erb within layouts/application (103.5ms)
+Completed 200 OK in 117ms (Views: 109.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get_more?count=11" for 127.0.0.1 at Thu Mar 22 12:21:22 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"11"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+  [1m[35mProject Load (0.9ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12,11)) ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (4.3ms)
+Rendered projects/get_more.js.erb (6.5ms)
+Completed 200 OK in 79ms (Views: 26.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:21:58 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 2[0m
+Rendered projects/_more.html.erb (86.0ms)
+Rendered projects/index.html.erb within layouts/application (92.9ms)
+Completed 200 OK in 106ms (Views: 98.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get_more?count=2" for 127.0.0.1 at Thu Mar 22 12:21:59 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"2"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 2
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (22,21)) ORDER BY created_at DESC LIMIT 2[0m
+Rendered projects/_more.html.erb (3.2ms)
+Rendered projects/get_more.js.erb (5.2ms)
+Completed 200 OK in 46ms (Views: 24.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/get_more?count=4" for 127.0.0.1 at Thu Mar 22 12:22:02 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"4"}
+  [1m[35mProject Load (0.9ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 4
+  [1m[36mProject Load (0.7ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19)) ORDER BY created_at DESC LIMIT 2[0m
+Rendered projects/_more.html.erb (3.9ms)
+Rendered projects/get_more.js.erb (6.9ms)
+Completed 200 OK in 58ms (Views: 32.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Thu Mar 22 12:22:02 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17)) ORDER BY created_at DESC LIMIT 2[0m
+Rendered projects/_more.html.erb (3.3ms)
+Rendered projects/get_more.js.erb (5.2ms)
+Completed 200 OK in 46ms (Views: 24.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/get_more?count=8" for 127.0.0.1 at Thu Mar 22 12:22:05 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"8"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 8
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14)) ORDER BY created_at DESC LIMIT 2[0m
+Rendered projects/_more.html.erb (3.1ms)
+Rendered projects/get_more.js.erb (5.2ms)
+Completed 200 OK in 48ms (Views: 25.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/get_more?count=10" for 127.0.0.1 at Thu Mar 22 12:22:06 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"10"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 10
+  [1m[36mProject Load (0.7ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12)) ORDER BY created_at DESC LIMIT 2[0m
+Rendered projects/_more.html.erb (3.1ms)
+Rendered projects/get_more.js.erb (5.1ms)
+Completed 200 OK in 161ms (Views: 24.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/get_more?count=12" for 127.0.0.1 at Thu Mar 22 12:22:06 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"12"}
+  [1m[35mProject Load (0.5ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 12
+  [1m[36mProject Load (0.8ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12,11,10)) ORDER BY created_at DESC LIMIT 2[0m
+Rendered projects/_more.html.erb (3.4ms)
+Rendered projects/get_more.js.erb (6.1ms)
+Completed 200 OK in 67ms (Views: 33.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/get_more?count=14" for 127.0.0.1 at Thu Mar 22 12:22:07 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"14"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 14
+  [1m[36mProject Load (0.7ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12,11,10,9,8)) ORDER BY created_at DESC LIMIT 2[0m
+Rendered projects/_more.html.erb (0.8ms)
+Rendered projects/get_more.js.erb (2.6ms)
+Completed 200 OK in 130ms (Views: 22.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:22:10 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 2
+Rendered projects/_more.html.erb (88.0ms)
+Rendered projects/index.html.erb within layouts/application (94.6ms)
+Completed 200 OK in 108ms (Views: 100.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get_more?count=2" for 127.0.0.1 at Thu Mar 22 12:22:12 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"2"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 2[0m
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21)) ORDER BY created_at DESC LIMIT 2
+Rendered projects/_more.html.erb (3.2ms)
+Rendered projects/get_more.js.erb (5.2ms)
+Completed 200 OK in 127ms (Views: 24.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/get_more?count=4" for 127.0.0.1 at Thu Mar 22 12:22:16 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"4"}
+  [1m[36mProject Load (1.9ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 4[0m
+  [1m[35mProject Load (2.7ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19)) ORDER BY created_at DESC LIMIT 2
+Rendered projects/_more.html.erb (3.2ms)
+Rendered projects/get_more.js.erb (7.0ms)
+Completed 200 OK in 61ms (Views: 30.0ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Thu Mar 22 12:22:16 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17)) ORDER BY created_at DESC LIMIT 2
+Rendered projects/_more.html.erb (3.2ms)
+Rendered projects/get_more.js.erb (5.2ms)
+Completed 200 OK in 122ms (Views: 23.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/get_more?count=8" for 127.0.0.1 at Thu Mar 22 12:22:18 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"8"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 8[0m
+  [1m[35mProject Load (0.7ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14)) ORDER BY created_at DESC LIMIT 2
+Rendered projects/_more.html.erb (3.5ms)
+Rendered projects/get_more.js.erb (5.8ms)
+Completed 200 OK in 56ms (Views: 28.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/get_more?count=10" for 127.0.0.1 at Thu Mar 22 12:22:18 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"10"}
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mProject Load (0.8ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12)) ORDER BY created_at DESC LIMIT 2
+Rendered projects/_more.html.erb (3.2ms)
+Rendered projects/get_more.js.erb (5.2ms)
+Completed 200 OK in 174ms (Views: 24.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/get_more?count=12" for 127.0.0.1 at Thu Mar 22 12:22:19 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"12"}
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 12[0m
+  [1m[35mProject Load (0.7ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12,11,10)) ORDER BY created_at DESC LIMIT 2
+Rendered projects/_more.html.erb (6.6ms)
+Rendered projects/get_more.js.erb (11.5ms)
+Completed 200 OK in 82ms (Views: 42.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/get_more?count=14" for 127.0.0.1 at Thu Mar 22 12:22:19 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"14"}
+  [1m[36mProject Load (0.7ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 14[0m
+  [1m[35mProject Load (0.7ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12,11,10,9,8)) ORDER BY created_at DESC LIMIT 2
+Rendered projects/_more.html.erb (0.8ms)
+Rendered projects/get_more.js.erb (2.6ms)
+Completed 200 OK in 124ms (Views: 21.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:22:54 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 2[0m
+Rendered projects/_more.html.erb (89.8ms)
+Rendered projects/index.html.erb within layouts/application (96.4ms)
+Completed 200 OK in 110ms (Views: 101.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/get_more?count=2" for 127.0.0.1 at Thu Mar 22 12:22:58 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"2"}
+  [1m[35mProject Load (0.7ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 2
+  [1m[36mProject Load (0.9ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (22,21)) ORDER BY created_at DESC LIMIT 2[0m
+Rendered projects/_more.html.erb (5.1ms)
+Rendered projects/get_more.js.erb (8.0ms)
+Completed 200 OK in 71ms (Views: 41.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:24:30 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 2
+Rendered projects/_more.html.erb (80.9ms)
+Rendered projects/index.html.erb within layouts/application (87.6ms)
+Completed 200 OK in 101ms (Views: 93.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get_more?count=2" for 127.0.0.1 at Thu Mar 22 12:24:35 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"2"}
+  [1m[36mProject Load (0.8ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 2[0m
+  [1m[35mProject Load (0.9ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21)) ORDER BY created_at DESC LIMIT 2
+Rendered projects/_more.html.erb (3.5ms)
+Rendered projects/get_more.js.erb (6.3ms)
+Completed 200 OK in 62ms (Views: 34.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/get_more?count=4" for 127.0.0.1 at Thu Mar 22 12:24:35 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"4"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 4[0m
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19)) ORDER BY created_at DESC LIMIT 2
+Rendered projects/_more.html.erb (3.1ms)
+Rendered projects/get_more.js.erb (5.4ms)
+Completed 200 OK in 144ms (Views: 24.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/get_more?count=6" for 127.0.0.1 at Thu Mar 22 12:24:37 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"6"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 6[0m
+  [1m[35mProject Load (1.8ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17)) ORDER BY created_at DESC LIMIT 2
+Rendered projects/_more.html.erb (5.9ms)
+Rendered projects/get_more.js.erb (9.4ms)
+Completed 200 OK in 61ms (Views: 30.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/get_more?count=8" for 127.0.0.1 at Thu Mar 22 12:24:38 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"8"}
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 8[0m
+  [1m[35mProject Load (0.7ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14)) ORDER BY created_at DESC LIMIT 2
+Rendered projects/_more.html.erb (3.8ms)
+Rendered projects/get_more.js.erb (6.1ms)
+Completed 200 OK in 134ms (Views: 25.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/get_more?count=10" for 127.0.0.1 at Thu Mar 22 12:24:38 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"10"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 10[0m
+  [1m[35mProject Load (1.4ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12)) ORDER BY created_at DESC LIMIT 2
+Rendered projects/_more.html.erb (3.1ms)
+Rendered projects/get_more.js.erb (5.2ms)
+Completed 200 OK in 51ms (Views: 23.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/get_more?count=12" for 127.0.0.1 at Thu Mar 22 12:24:39 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"12"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 12[0m
+  [1m[35mProject Load (0.7ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12,11,10)) ORDER BY created_at DESC LIMIT 2
+Rendered projects/_more.html.erb (3.3ms)
+Rendered projects/get_more.js.erb (5.5ms)
+Completed 200 OK in 168ms (Views: 25.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/get_more?count=14" for 127.0.0.1 at Thu Mar 22 12:24:46 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"14"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 14[0m
+  [1m[35mProject Load (0.7ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12,11,10,9,8)) ORDER BY created_at DESC LIMIT 2
+Rendered projects/_more.html.erb (2.6ms)
+Rendered projects/get_more.js.erb (5.5ms)
+Completed 200 OK in 59ms (Views: 29.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:24:49 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 2[0m
+Rendered projects/_more.html.erb (100.0ms)
+Rendered projects/index.html.erb within layouts/application (106.5ms)
+Completed 200 OK in 120ms (Views: 112.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:25:02 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (91.2ms)
+Rendered projects/index.html.erb within layouts/application (97.7ms)
+Completed 200 OK in 112ms (Views: 103.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get_more?count=11" for 127.0.0.1 at Thu Mar 22 12:25:07 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"11"}
+  [1m[36mProject Load (2.6ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+  [1m[35mProject Load (0.8ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12,11)) ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (4.8ms)
+Rendered projects/get_more.js.erb (8.0ms)
+Completed 200 OK in 64ms (Views: 34.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:25:31 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (89.6ms)
+Rendered projects/index.html.erb within layouts/application (96.1ms)
+Completed 200 OK in 110ms (Views: 101.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:27:16 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (116.3ms)
+Rendered projects/index.html.erb within layouts/application (122.9ms)
+Completed 200 OK in 137ms (Views: 129.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:30:01 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (89.8ms)
+Rendered projects/index.html.erb within layouts/application (96.7ms)
+Completed 200 OK in 190ms (Views: 102.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:32:21 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (114.8ms)
+Rendered projects/index.html.erb within layouts/application (121.4ms)
+Completed 200 OK in 136ms (Views: 127.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:33:24 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (33.7ms)
+Rendered projects/index.html.erb within layouts/application (99.6ms)
+Completed 200 OK in 195ms (Views: 105.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get_more?count=11" for 127.0.0.1 at Thu Mar 22 12:33:25 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"11"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 11
+  [1m[36mProject Load (0.8ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12,11)) ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (5.6ms)
+Rendered projects/get_more.js.erb (8.1ms)
+Completed 200 OK in 53ms (Views: 30.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:34:02 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (32.9ms)
+Rendered projects/index.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 135ms (Views: 127.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get_more?count=11" for 127.0.0.1 at Thu Mar 22 12:34:03 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"11"}
+  [1m[36mProject Load (1.1ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+  [1m[35mProject Load (0.8ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12,11)) ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (4.9ms)
+Rendered projects/get_more.js.erb (7.6ms)
+Completed 200 OK in 64ms (Views: 32.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:34:34 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (98.5ms)
+Rendered projects/index.html.erb within layouts/application (105.1ms)
+Completed 200 OK in 119ms (Views: 110.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:35:04 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (93.3ms)
+Rendered projects/index.html.erb within layouts/application (100.0ms)
+Completed 200 OK in 115ms (Views: 105.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get_more?count=11" for 127.0.0.1 at Thu Mar 22 12:35:05 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"11"}
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT id FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+  [1m[35mProject Load (0.7ms)[0m  SELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12,11)) ORDER BY created_at DESC LIMIT 11
+Rendered projects/_more.html.erb (4.2ms)
+Rendered projects/get_more.js.erb (6.4ms)
+Completed 200 OK in 142ms (Views: 26.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:36:24 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (95.3ms)
+Rendered projects/index.html.erb within layouts/application (102.2ms)
+Completed 200 OK in 117ms (Views: 107.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get_more?count=11" for 127.0.0.1 at Thu Mar 22 12:36:27 -0700 2012
+  Processing by ProjectsController#get_more as 
+  Parameters: {"count"=>"11"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT id FROM `projects` ORDER BY created_at DESC LIMIT 11
+  [1m[36mProject Load (0.8ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE (id not in (22,21,20,19,18,17,15,14,13,12,11)) ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (5.6ms)
+Rendered projects/get_more.js.erb (8.1ms)
+Completed 200 OK in 158ms (Views: 31.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/messages/new?message_type=order" for 127.0.0.1 at Thu Mar 22 12:36:37 -0700 2012
+  Processing by MessagesController#new as HTML
+  Parameters: {"message_type"=>"order"}
+Rendered messages/_form.html.erb (4.8ms)
+Rendered messages/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 38ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new?message_type=email" for 127.0.0.1 at Thu Mar 22 12:36:40 -0700 2012
+  Processing by MessagesController#new as HTML
+  Parameters: {"message_type"=>"email"}
+Rendered messages/_form.html.erb (3.6ms)
+Rendered messages/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 122ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at Thu Mar 22 12:37:08 -0700 2012
+  Processing by AboutsController#index as HTML
+  [1m[35mAbout Load (0.4ms)[0m  SELECT `abouts`.* FROM `abouts` ORDER BY created_at DESC LIMIT 1
+Rendered abouts/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 58ms (Views: 42.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 22 12:43:39 -0700 2012
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` ORDER BY created_at DESC LIMIT 11[0m
+Rendered projects/_more.html.erb (186.6ms)
+Rendered projects/index.html.erb within layouts/application (193.4ms)
+Completed 200 OK in 311ms (Views: 227.1ms | ActiveRecord: 0.5ms)

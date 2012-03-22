@@ -46,6 +46,7 @@ function refresh_view(){
 function reset_view(){
 	
   $('.single_cake_wrapper').show();
+  $('html').css('background-color','#E1E1E1');
   $('body').css('background-color','#E1E1E1');
   $('.main_logo').attr('src','/images/logo50.png');
   $('.text_parties').removeClass("purple");
@@ -111,7 +112,7 @@ $(document).ready(function() {
   
   $(".contact").fancybox({
 	'width'				: '75%',
-	'height'			: 400,
+	'height'			: '100%',
 	'autoScale'			: false,
 	'transitionIn'		: 'elastic',
 	'transitionOut'		: 'elastic',
@@ -147,6 +148,7 @@ $(document).ready(function() {
     $('.special').parent().hide();
     
     $('.text_parties').addClass("purple");
+    $('html').css('background-color','#D5CFE8');
     $('body').css('background-color','#D5CFE8');
     $('.main_logo').attr('src','/images/logoPurple50.png');
     
@@ -162,6 +164,7 @@ $(document).ready(function() {
     $('.special').parent().hide();
     
     $('.text_weddings').addClass("pink");
+    $('html').css('background-color','#FBD5E2');
     $('body').css('background-color','#FBD5E2');
     $('.main_logo').attr('src','/images/logoPink50.png');
     
@@ -177,6 +180,7 @@ $(document).ready(function() {
     $('.parties').parent().hide();
     
     $('.text_special_occassions').addClass("teal");
+    //$('html').css('background-color','#FBD5E2');
     //$('body').css('background-color','#FBD5E2');
     //$('.main_logo').attr('src','/images/logoPink50.png');
     
