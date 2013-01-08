@@ -1,7 +1,13 @@
 <div id="wrapper" class="BoardLayout">
 
 <div class="cakes_wrapper" id="cakes_wrapper">
-  <%= render 'more' %>
+  <% if current_user && current_user.admin? %>
+    <div id="cakes" class="cakes_are_sortable" data-update-url="<%= sort_projects_url %>">	
+  <% else %>
+    <div id="cakes">	
+  <% end %>
+      <%= render 'more' %>
+    </div>
 </div>
 
 <div class="more_cake_wrapper">

@@ -28,6 +28,7 @@ GEM
       activemodel (= 3.0.7)
       activesupport (= 3.0.7)
     activesupport (3.0.7)
+    acts_as_list (0.1.5)
     arel (2.0.10)
     bcrypt-ruby (3.0.1)
     builder (2.1.2)
@@ -88,6 +89,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts_as_list
   bcrypt-ruby
   mongrel
   mysql2 (< 0.3)

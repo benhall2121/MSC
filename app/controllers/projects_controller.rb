@@ -4,9 +4,9 @@ class ProjectsController < ApplicationController
   @@limit = 11
   
   def get_more
-    @projects_already_displayed = Project.find(:all, :select => 'id', :order => "created_at DESC", :limit => params[:count]) 
+    @projects_already_displayed = Project.find(:all, :select => 'id', :order => "position, created_at DESC", :limit => params[:count]) 
     
-    @projects = Project.find(:all, :conditions => ['id not in (?)', @projects_already_displayed], :order => "created_at DESC", :limit => @@limit)
+    @projects = Project.find(:all, :conditions => ['id not in (?)', @projects_already_displayed], :order => "position, created_at DESC", :limit => @@limit)
   
     @limit = @@limit
     
@@ -14,12 +14,19 @@ class ProjectsController < ApplicationController
   end 
   
   def index
-    @projects = Project.find(:all, :order => "created_at DESC", :limit => @@limit)
+    @projects = Project.find(:all, :order => 'position, created_at DESC', :limit => @@limit)
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @projects }
     end
+  end
+
+  def sort
+    params[:project].each_with_index do |id, index|
+      Project.update_all({:position => index+1}, {:id => id})
+    end
+    render :nothing => true
   end
 
   # GET /projects/1

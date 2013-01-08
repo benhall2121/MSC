@@ -1,5 +1,8 @@
+
+
+
   <% @projects.each do |project| %>
-    <div class="single_cake_wrapper">
+    <div class="single_cake_wrapper" id="project_<%= project.id %>">
       <div class="cake_image_div"><%= link_to image_tag(project.photo.url(:medium), :class => 'single_photo'), project.photo.url(:large), :class => 'pop', :rel => 'gallery', :title => project.title %></div>
       <div class="cake_description_div"><span class="cake_title"><%= project.title %></span> <br/><%= project.description %></div>
       <%= hidden_field project.wedding, 'wedding', :class => 'wedding' if project.wedding %>

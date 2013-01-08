@@ -1,4 +1,6 @@
 class Project < ActiveRecord::Base
+  acts_as_list
+
   has_attached_file :photo, :styles => { :icon => "95>", :small => "150>", :medium => "250>", :large => "540>" }, #:styles      => {:icon => "50x50#", :thumb=> "100x100#", :small  => "190x190#", :large => "500x500>" },
   :url  => "/assets/project/:id/:style/:basename.:extension",
   :path => ":rails_root/public/assets/project/:id/:style/:basename.:extension",

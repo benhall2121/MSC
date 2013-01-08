@@ -205,6 +205,13 @@ $(document).ready(function() {
   $('.load_more_cakes').click(function(){
     add_more_cakes();	  
   });
+
+  $('.cakes_are_sortable').sortable({
+    update: function(event, ui) {
+      refresh_view(); 
+      $.post($(this).data('update-url'), $(this).sortable('serialize'));
+    }
+  });
   
   
 });

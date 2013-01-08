@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120313220950) do
+ActiveRecord::Schema.define(:version => 20130108172546) do
 
   create_table "abouts", :force => true do |t|
     t.string   "title"
@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(:version => 20120313220950) do
     t.boolean  "wedding"
     t.boolean  "special"
     t.boolean  "parties"
+    t.integer  "position"
   end
 
   create_table "users", :force => true do |t|

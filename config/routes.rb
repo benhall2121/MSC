@@ -3,7 +3,9 @@ MSC::Application.routes.draw do
 
   resources :contacts
 
-  resources :projects
+  resources :projects do
+    collection { post :sort }
+  end
 
   resources :abouts
 

@@ -8,4 +8,5 @@ gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'mongrel'
 gem 'rest-client'
 gem 'paperclip'
+gem 'acts_as_list'
 
